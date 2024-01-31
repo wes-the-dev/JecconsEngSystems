@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('./assets/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Thin.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Thin.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Thin.ttf') format('truetype');
+       font-weight: 100;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Extralight.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Extralight.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Extralight.ttf') format('truetype');
+       font-weight: 200;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Light.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Light.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('assets/fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Regular.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Medium.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Bold.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Extrabold.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Extrabold.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype');
+       font-weight: 800;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Cabinet';
+  src: url('./assets/fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+       url('./assets/fonts/CabinetGrotesk-Black.woff') format('woff'),
+       url('./assets/fonts/CabinetGrotesk-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-blue: #29166F;
+}
+
+/* NAVIGATION BAR */
+.companyLogo{
+  padding-top: 10px;
+}
+
+.mainMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Cabinet';
+  font-size: 18px;
+  font-weight: 500;
+  /* padding-block: 12px; */
+  height: 100px;
+  padding-top: 12px;
+  /* position: sticky;
+  top: 0; */
+}
+
+.menuList{
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+  padding-block: 12px;
+  /* color: var(--primary-blue); */
+}
+
+.menuListItem{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList span{
+  width: fit-content;
+  height: fit-content;
+}
+
+.menuHovLine{
+  margin-top: 8px;
+  height: 3px;
+  width: 0;
+  display: none;
+  background-color: var(--primary-blue);
+}
+
+.menuList span:hover{
+  font-weight: 700;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.menuList span:hover + .menuHovLine{
+  width: 100%;
+  display: block;
+  transition: linear 1s;
+}
+.contactBtn{
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #DBDBE0;
+  outline: thick double #DBDBE0;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.heroSection{
+  background-image: url('assets/images/hero_bg.jpg');
+  height: 3000px;
+  position: relative;
+}
+
+.heroMain{
+  margin-top: 100px;
+  position: relative;
+}
+
+.heroJeccons{
+  position: absolute;
+  top: 0;
+  height: 144px;
+  
+}
