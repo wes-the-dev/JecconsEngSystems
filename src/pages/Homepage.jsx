@@ -2,6 +2,7 @@
 export const Homepage = () => {
   return (
     <div>
+      
       <section className="heroSection">
         <nav className="mainMenu">
             <div className="companyLogo">
@@ -66,10 +67,30 @@ export const Homepage = () => {
             </div>
         </nav>
         <div className="heroMain">
-          <span className="heroJeccons">
-            JECCONS
-          </span>
+          <div className="jecconsPhrase">
+            <span >
+            Engineering the Future with Excellence and British Standards.
+            </span>
+            <div className="expSumm">
+              <p>JECCONS Engineering Systems Ltd is a with 27 years of experience in various engineering fields. Their team, trained in Britain, adheres to British standards.</p>
+
+              <div className="learnMoreBtn">
+                <span>Learn more</span>
+              </div>
+            </div>
+            
+          </div>
+          <div className="heroJeccons">
+            <span>JECCONS</span>
+            
+          </div>
+          
+          
         </div>
+      </section>
+
+      <section className="pastWorks">
+        
       </section>
     </div>
   )

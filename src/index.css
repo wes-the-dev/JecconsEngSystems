@@ -79,6 +79,26 @@
        font-display: swap;
        font-style: normal;
 }
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./assets/fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/monumentextended-regular-webfont.woff') format('woff');
+       /* url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype'); */
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./assets/fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+       /* url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype'); */
+       font-weight: 800;
+       font-display: swap;
+       font-style: normal;
+}
 *{
   padding: 0;
   margin: 0;
@@ -149,8 +169,8 @@
   transition: linear 1s;
 }
 .contactBtn{
-  padding-block: 12px;
-  padding-inline: 24px;
+  padding-block: 14px;
+  padding-inline: 32px;
   border-radius: 8px;
   height: fit-content;
   width: fit-content;
@@ -165,18 +185,74 @@
 /* HERO SECTION */
 .heroSection{
   background-image: url('assets/images/hero_bg.jpg');
-  height: 3000px;
+  /* background-position: 100%;
+  background-size: cover;*/
+  background-repeat: no-repeat;
+  /* height: 100vh; */
   position: relative;
+  background-size: cover;
+  background-position: 100%;
 }
 
 .heroMain{
   margin-top: 100px;
+  padding-bottom: 200px;
   position: relative;
+  padding-top: 65px;
+  width: 60%;
+  
 }
 
 .heroJeccons{
+  font-family: 'Monument';
+  font-weight: 800;
+  color: transparent;
+  font-style: normal;
   position: absolute;
   top: 0;
-  height: 144px;
-  
+  left: 45px;
+  height: fit-content;
+  font-size: 120px;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #919EB3;
+}
+
+.jecconsPhrase{
+  margin-left: 100px;
+  width: 700px;
+  position: relative;
+  font-family: 'Monument';
+  font-weight: 800;
+  font-size: 43px;
+}
+.jecconsPhrase span{
+  margin-bottom: 16px;
+  line-height: 56.316px;
+}
+.expSumm{
+  font-family: 'Cabinet';
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 12px;
+}
+.expSumm p{
+  margin-bottom: 30px;
+  line-height: 38.969px;
+
+}
+
+.learnMoreBtn{
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
+  padding-inline: 32px;
+  padding-block: 10px;
+  background-color: var(--primary-blue);
+  border-radius: 8px;
+  outline: thick double var(--primary-blue);
+  cursor: pointer;
+}
+
+.pastWorks{
+  display: flex;
 }
