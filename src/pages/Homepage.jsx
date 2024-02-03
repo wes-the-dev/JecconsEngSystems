@@ -1,4 +1,15 @@
 
+import dclmLogo from '../assets/images/portfolio logos/dclm_logo.png'
+import nipexLogo from '../assets/images/portfolio logos/Nipex_logo.png'
+import cbnLogo from '../assets/images/portfolio logos/Central_Bank_of_Nigeria_logo.png'
+import nnpcLogo from '../assets/images/portfolio logos/Nigerian_National_Petroleum_Company_logo2.png'
+import unlilagLogo from '../assets/images/portfolio logos/unilag_logo.png'
+import npaLogo from '../assets/images/portfolio logos/Nigerian-Ports-Authority-3.png'
+import snhLogo from '../assets/images/portfolio logos/SNH-LOGO0.png'
+import nspmLogo from '../assets/images/portfolio logos/nspm_logo.png'
+import servicesImg from '../assets/images/services_homepg.png'
+
+
 export const Homepage = () => {
   return (
     <div>
@@ -66,12 +77,13 @@ export const Homepage = () => {
                 <span>Contact Us</span>
             </div>
         </nav>
+
         <div className="heroMain">
           <div className="jecconsPhrase">
             <span >
             Engineering the Future with Excellence and British Standards.
             </span>
-            <div className="expSumm">
+            <div className="expPhrase">
               <p>JECCONS Engineering Systems Ltd is a with 27 years of experience in various engineering fields. Their team, trained in Britain, adheres to British standards.</p>
 
               <div className="learnMoreBtn">
@@ -90,7 +102,111 @@ export const Homepage = () => {
       </section>
 
       <section className="pastWorks">
-        
+          <div>
+            <img src={dclmLogo} alt="dclm-logo" />
+          </div>
+          <div>
+            <img src={nipexLogo} alt="dclm-logo" />
+          </div>
+          <div>
+            <img src={cbnLogo} alt="dclm-logo" />
+
+          </div>
+          <div>
+            <img src={nnpcLogo} alt="dclm-logo" />
+
+          </div>
+          <div>
+            <img src={unlilagLogo} alt="dclm-logo" />
+          </div>
+          <div>
+            <img src={npaLogo} alt="dclm-logo" />
+          </div>
+          <div>
+            <img src={snhLogo} alt="dclm-logo" />
+          </div>
+          <div>
+            <img src={nspmLogo} alt="dclm-logo" />
+          </div>
+      </section>
+
+      <section className="servicesHomePg">
+        <div className='whoWeAreSummHomePg'>
+          <div className='whoWeAreSummHomePgImg'>
+            <img className='servImgMain' src={servicesImg} alt="a-man-surveying" />
+            <img className='servImg' src={servicesImg} alt="a-man-surveying" />
+          </div>
+          <div className="whoWeAreSummText">
+            <h3>Who we are</h3>
+            <h2>Engineering Excellence, Building Futures</h2>
+            <p>
+            JECCONS ENGINEERING SYSTEM is an engineering and construction firm specializing in safety, water, energy, maintenance and construction. We provide services to several relevant sectors of Nigerian economy such as water, energy, security manufacturing, oil and gas with our cache of international professionals and experts. JECCONS ENGINEERING name has been synonymous with excellence and quality in all its relevant industries.
+            </p>
+          </div>
+
+        </div>
+
+        <div className="expSumm">
+            <div className="projectNum">
+              <div className='projNumExact'>
+                <span className='projNumExactHide'>100+</span>
+                <span className='projNumExactVis'>100+</span>
+                
+              </div>
+              <div>
+                <p>COMPLETED</p>
+                <span>Projects</span>
+              </div>
+            </div>
+
+            <div className="projectNum">
+              <div className='projNumExact'>
+                <span className='projNumExactHide'>30+</span>
+                <span className='projNumExactVis'>30+</span>
+                
+              </div>
+              <div>
+                <p>years of</p>
+                <span>Experience</span>
+              </div>
+            </div>
+
+            <div className="projectNum">
+              <div className='projNumExact'>
+                <span className='projNumExactHide'>50+</span>
+                <span className='projNumExactVis'>50+</span>
+              </div>
+              <div>
+                <p>certified </p>
+                <span>Professionals</span>
+              </div>
+            </div>
+        </div>
+
+        <div className="serviceSummHomePg">
+          <div className="amazingServ">
+            <h3>Amazing Services</h3>
+            <span>Skilled in engineering, we cover rehab to replacements, managing everything from foundations to stormwater.</span>
+            <div className="fullServBtn">
+              <span>Learn More</span>
+            </div>
+          </div>
+          <div className="civEngServHomePg">
+            
+          </div>
+          <div className="electEngHomePg">
+
+          </div>
+          <div className="envEngHomePg">
+
+          </div>
+          <div className="mechEngHomePg">
+
+          </div>
+          <div className="oilAndGasServHomePg">
+
+          </div>
+        </div>
       </section>
     </div>
   )
