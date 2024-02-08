@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: 'CabinetGrotesk-Variable';
   src: url('./assets/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
@@ -107,6 +110,7 @@
 
 :root{
   --primary-blue: #29166F;
+  --primary-red: #661A2B;
   --black: #222;
   --light-grey: #DBDBE0
 }
@@ -286,15 +290,18 @@
   /* gap: 10px; */
 }
 
+/*WHO WE ARE SUMMARY*/
 .servicesHomePg{
-  padding-inline: 100px;
+  /* padding-inline: 100px; */
 }
 
 .whoWeAreSummHomePg{
   border-radius: 30px;
   position: relative;
   background-color: var(--primary-blue);
-  height: 500px;  
+  height: 500px;
+  min-height: 500px;
+  /* height: 500px;   */
   /* padding-block: 94px; */
   display: flex;
   gap: 28px;
@@ -304,6 +311,8 @@
 .whoWeAreSummHomePgImg{
   position: relative;
   margin-left: 32px;
+  width: max-content;
+  /* color: rgba(214, 214, 214, 0.986); */
 }
 
 .servImgMain{
@@ -313,6 +322,7 @@
 }
 .servImg{
   visibility: hidden;
+  width: auto;
   /* width: 600px; */
 }
 
@@ -349,7 +359,7 @@
 .expSumm{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 140px;
+  padding-bottom: 80px;
 }
 
 .projectNum{
@@ -390,9 +400,15 @@
 
 .serviceSummHomePg{
   font-family: 'Cabinet';
-  padding-inline: 100px;
+  /* padding-inline: 100px; */
   display: flex;
   justify-content: space-between;
+}
+
+.servSummHomePgWrap{
+  /* background:  url('assets/images/services_summbg.jpg'); */
+  background: linear-gradient(0deg, rgba(2, 105, 231, 0.092), rgba(2, 105, 231, 0.097)), url('assets/images/services_summbg.jpg')
+  /* padding: 0; */
 }
  
 .serviceSummHomePg h3{
@@ -426,6 +442,38 @@
   outline-width: 0;
   transform: scale(1.05);
   transition: 90ms linear;
+}
+.civEngServHomePg{
+  width: 30%;
+  /* box-shadow: 2px 3px 25px 0px #00000014; */
+}
+
+.projSummHomePg, .safetyPolicy{
+  font-family: 'Cabinet';
+}
+
+.learnPolicy{
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
+  padding-inline: 32px;
+  padding-block: 16px;
+  background-color: var(--primary-red);
+  border-radius: 8px;
+  outline: thick double var(--primary-red);
+  outline-width: 5px;
+  cursor: pointer;
+}
+
+.learnPolicy:hover{
+  outline-width: 0;
+  transform: scale(1.05);
+  transition: 90ms linear;
+
+}
+
+.quick-service-links li{
+  margin-bottom: 12px
 }
 
 
