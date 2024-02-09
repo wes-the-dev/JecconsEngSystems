@@ -8,15 +8,15 @@ import oilAndGasIcon from '../../assets/images/services_icons/oil_gasicon.png'
 function WhatWeDo() {
   return (
     <section className="servicesHomePg">
-        <div className='whoWeAreSummHomePg mx-[100px] w-[fit-content]'>
-          <div className='whoWeAreSummHomePgImg w-[100%]'>
-            <img className='servImgMain' src={servicesImg} alt="a-man-surveying" />
+        <div className='whoWeAreSummHomePg max-[1170px]:h-[560px] max-[]:  mx-[100px] w-[fit-content]'>
+          <div className='whoWeAreSummHomePgImg  w-[100%]'>
+            <img className='servImgMain max-[1170px]:-top-10' src={servicesImg} alt="a-man-surveying" />
             <img className='servImg' src={servicesImg} alt="a-man-surveying" />
           </div>
-          <div className="whoWeAreSummText w-[50%]">
-            <h3>Who we are</h3>
-            <h2>Engineering Excellence, Building Futures</h2>
-            <p>
+          <div className="whoWeAreSummText w-[50%] max-[1170px]:gap-2 flex flex-col justify-center gap-4">
+            <h3 className='font-extrabold'>Who we are</h3>
+            <h2 className=' max-[1350px]:text-[30px] max-[1090px]:text-[20px] text-[50px]'>Engineering Excellence, Building Futures</h2>
+            <p className='max-[1090px]:text-[16px] text-[18px]'>
             JECCONS ENGINEERING SYSTEM is an engineering and construction firm specializing in safety, water, energy, maintenance and construction. We provide services to several relevant sectors of Nigerian economy such as water, energy, security manufacturing, oil and gas with our cache of international professionals and experts. JECCONS ENGINEERING name has been synonymous with excellence and quality in all its relevant industries.
             </p>
           </div>

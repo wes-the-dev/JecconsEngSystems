@@ -9,7 +9,7 @@ import nspmLogo from '../../assets/images/portfolio logos/nspm_logo.png'
 
 function PastWorksHm() {
   return (
-    <section className="pastWorks">
+    <section className="pastWorks w-[100vw]">
           <div>
             <img src={dclmLogo} alt="dclm-logo" />
           </div>

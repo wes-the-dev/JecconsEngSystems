@@ -109,13 +109,20 @@
 }
 
 :root{
+  /* --primary-blue: #29166f7f; */
   --primary-blue: #29166F;
   --primary-red: #661A2B;
   --black: #222;
   --light-grey: #DBDBE0
 }
 
+
+
+
+
 /* NAVIGATION BAR */
+
+
 .companyLogo{
   padding-top: 10px;
 }
@@ -140,6 +147,7 @@
   justify-content: space-between;
   gap: 46px;
   padding-block: 12px;
+  color: #fff;
   /* color: var(--primary-blue); */
 }
 
@@ -197,9 +205,14 @@
 
 }
 
+
+
+
 /* HERO SECTION */
+
+
 .heroSection{
-  background-image: url('assets/images/hero_bg.jpg');
+  background-image: url('assets/images/hero_bg3.jpg');
   /* background-color: #4e2828; */
   /* background-position: 100%;
   background-size: cover;*/
@@ -207,7 +220,7 @@
   /* height: 100vh; */
   position: relative;
   background-size: cover;
-  background-position: top;
+  background-position: 50%;
 }
 
 .heroMain{
@@ -216,8 +229,9 @@
   position: relative;
   padding-top: 65px;
   width: 60%;
-  margin-left: 60px;
-  color: var(--black);
+  /* margin-left: 60px; */
+  /* color: var(--black); */
+  color: #fff;
 }
 
 .heroJeccons{
@@ -231,12 +245,12 @@
   height: fit-content;
   font-size: 120px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #919EB3;
+  -webkit-text-stroke-color: #fff;
+  opacity: 0.3;
 }
 
 .jecconsPhrase{
   margin-left: 100px;
-  width: 700px;
   position: relative;
   font-family: 'Monument';
   font-weight: 800;
@@ -245,10 +259,12 @@
 .jecconsPhrase span{
   margin-bottom: 16px;
   line-height: 56.316px;
+  width: 700px;
+
 }
 .expPhrase{
   font-family: 'Cabinet';
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   margin-top: 12px;
 }
@@ -261,7 +277,7 @@
 .learnMoreBtn{
   color: #fff;
   font-weight: 700;
-  width: max-content;
+  width: fit-content;
   padding-inline: 32px;
   padding-block: 10px;
   background-color: var(--primary-blue);
@@ -278,7 +294,12 @@
 
 }
 
+
+
+
 /*COMPANIES WORKED WITH */
+
+
 .pastWorks{
   display: flex;
   padding-inline: 42px;
@@ -286,11 +307,14 @@
   justify-content: space-between;
   margin-bottom: 170px;
   border-bottom: 1px solid rgba(36, 68, 108, 0.126);
-  /* overflow-x: hidden; */
-  /* gap: 10px; */
+  overflow-x: hidden;
+  gap: 10px;
 }
 
-/*WHO WE ARE SUMMARY*/
+
+/*WHAT WE DO HOME PAGE*/
+
+
 .servicesHomePg{
   /* padding-inline: 100px; */
 }
@@ -322,29 +346,28 @@
 }
 .servImg{
   visibility: hidden;
-  width: auto;
-  /* width: 600px; */
+  /* width: auto; */
+  width: 600px;
 }
 
 .whoWeAreSummText{
   color: #fff;
   font-family: 'Cabinet';
   padding-right: 39px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .whoWeAreSummText h3{
   font-size: 22px;
   /* margin-top: 94px; */
   /* margin-bottom: 16px; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .whoWeAreSummText h2{
-  font-size: 50px;
   font-weight: 700;
   /* margin-bottom: 16px; */
   /* width: 576px;
@@ -352,9 +375,8 @@
 }
 .whoWeAreSummText p{
   line-height: 28px;
-  font-size: 19px;
+  /* font-size: 19px; */
 }
-
 
 .expSumm{
   display: flex;
@@ -452,6 +474,12 @@
   font-family: 'Cabinet';
 }
 
+
+
+
+/* SAFETY POLICY*/
+
+
 .learnPolicy{
   color: #fff;
   font-weight: 700;
@@ -472,6 +500,8 @@
 
 }
 
+
+/*FOOTER */
 .quick-service-links li{
   margin-bottom: 12px
 }
