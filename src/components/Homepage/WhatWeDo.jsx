@@ -1,4 +1,4 @@
-import servicesImg from '../../assets/images/services_homepg.png'
+// import servicesImg from '../../assets/images/services_homepg.png'
 import civEngIcon from '../../assets/images/services_icons/icon.png'
 import electIcon from '../../assets/images/services_icons/electicon.png'
 import envEngIcon from '../../assets/images/services_icons/env_engicon.png'
@@ -8,10 +8,10 @@ import oilAndGasIcon from '../../assets/images/services_icons/oil_gasicon.png'
 function WhatWeDo() {
   return (
     <section className="servicesHomePg">
-        <div className='whoWeAreSummHomePg max-[1170px]:h-[560px] max-[]:  mx-[100px] w-[fit-content]'>
-          <div className='whoWeAreSummHomePgImg  w-[100%]'>
-            <img className='servImgMain max-[1170px]:-top-10' src={servicesImg} alt="a-man-surveying" />
-            <img className='servImg' src={servicesImg} alt="a-man-surveying" />
+        {/* <div className='whoWeAreSummHomePg max-[1170px]:h-[560px] max-[1000px]:h-[300px] max-[1060px]:mx-[50px]  mx-[100px] '>
+          <div className='whoWeAreSummHomePgImg w-[100%]'>
+            <img className='servImgMain max-[1000px]:w-[80%] max-[1170px]:-top-10' src={servicesImg} alt="a-man-surveying" />
+            <img className='servImg max-[1000px]:w-[80%]' src={servicesImg} alt="a-man-surveying" />
           </div>
           <div className="whoWeAreSummText w-[50%] max-[1170px]:gap-2 flex flex-col justify-center gap-4">
             <h3 className='font-extrabold'>Who we are</h3>
@@ -21,41 +21,41 @@ function WhatWeDo() {
             </p>
           </div>
 
-        </div>
+        </div> */}
 
-        <div className="expSumm px-[100px]">
+        <div className="expSumm max-[1060px]:px-[50px] px-[100px]">
             <div className="projectNum">
               <div className='projNumExact'>
-                <span className='projNumExactHide'>100+</span>
-                <span className='projNumExactVis'>100+</span>
+                <span className='projNumExactHide max-[950px]:text-[40px]'>100+</span>
+                <span className='projNumExactVis max-[950px]:text-[40px]'>100+</span>
                 
               </div>
-              <div>
-                <p>COMPLETED</p>
-                <span>Projects</span>
+              <div className=' max-[950px]:mt-[18px]'>
+                <p className='max-[950px]:text-[14px]'>COMPLETED</p>
+                <span className='text-[30px] max-[950px]:text-[20px]'>Projects</span>
               </div>
             </div>
 
             <div className="projectNum">
               <div className='projNumExact'>
-                <span className='projNumExactHide'>30+</span>
-                <span className='projNumExactVis'>30+</span>
+                <span className='projNumExactHide max-[950px]:text-[40px]'>30+</span>
+                <span className='projNumExactVis max-[950px]:text-[40px]'>30+</span>
                 
               </div>
-              <div>
-                <p>years of</p>
-                <span>Experience</span>
+              <div className= 'max-[950px]:mt-[18px]'>
+                <p className='max-[950px]:text-[14px]'>years of</p>
+                <span className='text-[30px] max-[950px]:text-[20px]'>Experience</span>
               </div>
             </div>
 
             <div className="projectNum">
               <div className='projNumExact'>
-                <span className='projNumExactHide'>50+</span>
-                <span className='projNumExactVis'>50+</span>
+                <span className='projNumExactHide max-[950px]:text-[40px]'>50+</span>
+                <span className='projNumExactVis max-[950px]:text-[40px]'>50+</span>
               </div>
-              <div>
-                <p>certified </p>
-                <span>Professionals</span>
+              <div className= 'max-[950px]:mt-[18px]'>
+                <p className='max-[950px]:text-[14px]'>certified </p>
+                <span className='text-[30px] max-[950px]:text-[20px]'>Professionals</span>
               </div>
             </div>
         </div>

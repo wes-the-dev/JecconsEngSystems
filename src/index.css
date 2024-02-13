@@ -323,13 +323,15 @@
   border-radius: 30px;
   position: relative;
   background-color: var(--primary-blue);
-  height: 500px;
-  min-height: 500px;
+  height: fit-content;
+  padding-block: 20px;
+  /* height: 500px; */
+  /* min-height: 500px; */
   /* height: 500px;   */
   /* padding-block: 94px; */
   display: flex;
   gap: 28px;
-  margin-bottom: 250px;
+  margin-bottom: 180px;
   /* justify-content: flex-end; */
 }
 .whoWeAreSummHomePgImg{
@@ -396,7 +398,7 @@
 }
 .projNumExactHide{
   visibility: hidden;
-  font-size: 56px !important;
+  font-size: 56px;
 
   /* position: relative; */
 }
@@ -404,7 +406,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 56px !important;
+  font-size: 56px;
 }
 
 
@@ -415,7 +417,7 @@
 }
 
 .projectNum span{
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 600;
   color: var(--primary-blue);
 }
