@@ -102,11 +102,48 @@
        font-display: swap;
        font-style: normal;
 }
+
+@font-face {
+  font-family: 'PP-Telegraf';
+  src: url('./assets/fonts/PPTelegraf-UltraBold.ttf') format('truetype');
+       /* url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype'); */
+       font-weight: 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'PP-Telegraf';
+  src: url('./assets/fonts/PPTelegraf-UltraBold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'PP-Telegraf';
+  src: url('./assets/fonts/PPTelegraf-Regular.ttf') format('truetype');
+       /* url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype'); */
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP-Telegraf';
+  src: url('./assets/fonts/PPTelegraf-UltraLight.ttf') format('truetype');
+       /* url('./assets/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype'); */
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 
 :root{
   /* --primary-blue: #29166f7f; */
@@ -132,9 +169,9 @@
   justify-content: space-around;
   justify-items: flex-start;
   align-items: center;
-  font-family: 'Cabinet';
+  font-family: 'PP-Telegraf';
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   /* padding-block: 12px; */
   height: 100px;
   padding-top: 12px;
@@ -153,7 +190,6 @@
 
 .menuListItem{
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -169,12 +205,12 @@
   height: 3px;
   width: 0;
   display: none;
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
 }
 
 .menuList span:hover{
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   cursor: pointer;
 }
 
@@ -189,7 +225,7 @@
   border-radius: 8px;
   height: fit-content;
   width: fit-content;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-weight: 700;
   font-size: 18px;
   background-color: var(--light-grey);
@@ -204,7 +240,6 @@
   transition: 90ms linear;
 
 }
-
 
 
 
@@ -305,207 +340,25 @@
   padding-inline: 42px;
   padding-block: 40px;
   justify-content: space-between;
-  margin-bottom: 170px;
   border-bottom: 1px solid rgba(36, 68, 108, 0.126);
   overflow-x: hidden;
   gap: 10px;
 }
 
 
-/*WHAT WE DO HOME PAGE*/
+/*ABOUT JECCONS HOME PAGE*/
 
-
-.servicesHomePg{
-  /* padding-inline: 100px; */
-}
-
-.whoWeAreSummHomePg{
-  border-radius: 30px;
-  position: relative;
-  background-color: var(--primary-blue);
-  height: fit-content;
-  padding-block: 20px;
-  /* height: 500px; */
-  /* min-height: 500px; */
-  /* height: 500px;   */
-  /* padding-block: 94px; */
-  display: flex;
-  gap: 28px;
-  margin-bottom: 180px;
-  /* justify-content: flex-end; */
-}
-.whoWeAreSummHomePgImg{
-  position: relative;
-  margin-left: 32px;
-  width: max-content;
-  /* color: rgba(214, 214, 214, 0.986); */
-}
-
-.servImgMain{
-  position: absolute;
-  top: -100px;
-  /* left: 32px */
-}
-.servImg{
-  visibility: hidden;
-  /* width: auto; */
-  width: 600px;
-}
-
-.whoWeAreSummText{
-  color: #fff;
-  font-family: 'Cabinet';
-  padding-right: 39px;
-  /* display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center; */
-}
-
-.whoWeAreSummText h3{
-  font-size: 22px;
-  /* margin-top: 94px; */
-  /* margin-bottom: 16px; */
-  /* text-transform: uppercase; */
-}
-
-.whoWeAreSummText h2{
-  font-weight: 700;
-  /* margin-bottom: 16px; */
-  /* width: 576px;
-  max-width: 576px; */
-}
-.whoWeAreSummText p{
-  line-height: 28px;
-  /* font-size: 19px; */
-}
-
-.expSumm{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 80px;
-}
-
-.projectNum{
-  font-family: 'Cabinet';
-  display: flex;
-  justify-items: flex-end;
-  gap: 12px;
-}
-.projNumExact{
-  position: relative;
-
-}
-.projNumExactHide{
-  visibility: hidden;
-  font-size: 56px;
-
-  /* position: relative; */
-}
-.projNumExactVis {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 56px;
-}
-
-
-.projectNum p{
-  text-transform: uppercase;
+.about-hm-learn-more-btn{
   font-size: 18px;
-  color: var(--black);
-}
-
-.projectNum span{
-  /* font-size: 30px; */
-  font-weight: 600;
-  color: var(--primary-blue);
-}
-
-.serviceSummHomePg{
-  font-family: 'Cabinet';
-  /* padding-inline: 100px; */
-  display: flex;
-  justify-content: space-between;
-}
-
-.servSummHomePgWrap{
-  /* background:  url('assets/images/services_summbg.jpg'); */
-  background: linear-gradient(0deg, rgba(2, 105, 231, 0.092), rgba(2, 105, 231, 0.097)), url('assets/images/services_summbg.jpg')
-  /* padding: 0; */
-}
- 
-.serviceSummHomePg h3{
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--primary-blue)
-}
-
-.amazingServ{
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 30%;
-}
-.fullServBtn{
-  color: var(--primary-blue);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24.3px;
-  padding-inline: 32px;
-  padding-block: 16px;
-  background-color: var(--light-grey);
-  width: fit-content;
-  border-radius: 4px;
-  outline: thick double var(--light-grey);
-  outline-width: 5px;
+  outline: solid var(--primary-red) 1px;
+  outline-offset: 4px;
   cursor: pointer;
 }
 
-.fullServBtn:hover{
-  outline-width: 0;
+.about-hm-learn-more-btn:hover{
+  /* outline-width: 0; */
   transform: scale(1.05);
-  transition: 90ms linear;
+  outline-offset: 0px;
+  transition: 120ms linear;
+  gap: 18px;
 }
-.civEngServHomePg{
-  width: 30%;
-  /* box-shadow: 2px 3px 25px 0px #00000014; */
-}
-
-.projSummHomePg, .safetyPolicy{
-  font-family: 'Cabinet';
-}
-
-
-
-
-/* SAFETY POLICY*/
-
-
-.learnPolicy{
-  color: #fff;
-  font-weight: 700;
-  width: max-content;
-  padding-inline: 32px;
-  padding-block: 16px;
-  background-color: var(--primary-red);
-  border-radius: 8px;
-  outline: thick double var(--primary-red);
-  outline-width: 5px;
-  cursor: pointer;
-}
-
-.learnPolicy:hover{
-  outline-width: 0;
-  transform: scale(1.05);
-  transition: 90ms linear;
-
-}
-
-
-/*FOOTER */
-.quick-service-links li{
-  margin-bottom: 12px
-}
-
-
