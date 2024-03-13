@@ -341,7 +341,7 @@
   padding-block: 40px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(36, 68, 108, 0.126);
-  overflow-x: hidden;
+  overflow: hidden;
   gap: 10px;
 }
 
@@ -369,16 +369,16 @@
   transform: translateX(-100%);
 }
 
-.elect-eng-summ:hover span{
+.elect-eng-summ:hover span, .civ-eng-summ:hover span, .env-eng-summ:hover span, .mech-eng-summ:hover span, .oil-gas-summ:hover span{
   color: var(--primary-red);
 }
 
-.elect-eng-summ:hover .learn-more-service-hm-text-slash{
+.elect-eng-summ:hover .learn-more-service-hm-text-slash, .civ-eng-summ:hover .learn-more-service-hm-text-slash, .env-eng-summ:hover .learn-more-service-hm-text-slash, .mech-eng-summ:hover .learn-more-service-hm-text-slash, .oil-gas-summ:hover .learn-more-service-hm-text-slash{
   animation: learn-more-services-hm-slash 500ms linear forwards;
 
 }
 
-.elect-eng-summ:hover svg{
+.elect-eng-summ:hover svg, .civ-eng-summ:hover svg, .env-eng-summ:hover svg, .mech-eng-summ:hover svg, .oil-gas-summ:hover svg{
   animation: learn-more-services-hm-btn 500ms linear forwards;
 }
 
@@ -387,7 +387,7 @@
     transform: rotate(0deg);
   }
   50%{
-    transform: rotate(250deg);
+    transform: rotate(255deg);
   }
   100%{
     transform: rotate(180deg);
