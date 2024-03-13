@@ -8,7 +8,7 @@ import { Footer } from '../components/Global/Footer'
 // import projectTile from '../assets/images/project_title_tiles/title_tile1.png'
 
 
-export const Homepage = () => {
+function Homepage () {
   return (
     <div>
       
@@ -26,3 +26,5 @@ export const Homepage = () => {
     </div>
   )
 }
+
+export default Homepage
