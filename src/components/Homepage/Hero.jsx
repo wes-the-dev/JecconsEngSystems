@@ -12,9 +12,9 @@ function Hero() {
             <div className="expPhrase max-[430px]:text-[16px]">
               <p className="">JECCONS Engineering Systems Ltd is a with 27 years of experience in various engineering fields. Their team, trained in Britain, adheres to British standards.</p>
 
-              <div className="learnMoreBtn max-[850px]:px-[16px] max-[850px]:py-[4px] max-[850px]:text-[18px]">
+              {/* <div className="learnMoreBtn max-[850px]:px-[16px] max-[850px]:py-[4px] max-[850px]:text-[18px]">
                 <span>Learn more</span>
-              </div>
+              </div> */}
             </div>
             
           </div>

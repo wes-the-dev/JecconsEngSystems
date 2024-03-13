@@ -220,24 +220,24 @@
   transition: linear 1s;
 }
 .contactBtn{
-  padding-block: 14px;
+  padding-block: 18.5px;
   padding-inline: 32px;
-  border-radius: 8px;
-  height: fit-content;
+  border-radius: 100px;
   width: fit-content;
   color: var(--primary-red);
   font-weight: 700;
   font-size: 18px;
   background-color: var(--light-grey);
-  outline: thick double var(--light-grey);
-  outline-width: 5px;
+  outline: solid var(--light-grey) 1px;
+  outline-offset: 3px;
+  cursor: pointer;
   cursor: pointer;
 }
 
 .contactBtn:hover{
-  outline-width: 0;
+  outline-offset: 0px;
   transform: scale(1.05);
-  transition: 90ms linear;
+  transition: 120ms linear;
 
 }
 
@@ -361,4 +361,51 @@
   outline-offset: 0px;
   transition: 120ms linear;
   gap: 18px;
+}
+
+
+/* SERVICES HOME PAGE */
+.learn-more-service-hm-text-slash{
+  transform: translateX(-100%);
+}
+
+.elect-eng-summ:hover span{
+  color: var(--primary-red);
+}
+
+.elect-eng-summ:hover .learn-more-service-hm-text-slash{
+  animation: learn-more-services-hm-slash 500ms linear forwards;
+
+}
+
+.elect-eng-summ:hover svg{
+  animation: learn-more-services-hm-btn 500ms linear forwards;
+}
+
+@keyframes learn-more-services-hm-btn{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(250deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes learn-more-services-hm-slash{
+  0%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.service-home-number{
+  color: #B7B7B7;
 }
