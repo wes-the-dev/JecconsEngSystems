@@ -279,7 +279,7 @@
   left: 45px;
   height: fit-content;
   font-size: 120px;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-strokeWidth: 1px;
   -webkit-text-stroke-color: #fff;
   opacity: 0.3;
 }
