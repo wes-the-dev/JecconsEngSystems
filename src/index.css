@@ -349,7 +349,6 @@
 /*ABOUT JECCONS HOME PAGE*/
 
 .about-hm-learn-more-btn{
-  font-size: 18px;
   outline: solid var(--primary-red) 1px;
   outline-offset: 4px;
   cursor: pointer;
@@ -365,20 +364,22 @@
 
 
 /* SERVICES HOME PAGE */
+
+
 .learn-more-service-hm-text-slash{
   transform: translateX(-100%);
 }
 
-.elect-eng-summ:hover span, .civ-eng-summ:hover span, .env-eng-summ:hover span, .mech-eng-summ:hover span, .oil-gas-summ:hover span{
+.elect-eng-summ:hover span, .civ-eng-summ:hover span, .env-eng-summ:hover span, .mech-eng-summ:hover span, .oil-gas-summ:hover span, .safe-secure-summ:hover span{
   color: var(--primary-red);
 }
 
-.elect-eng-summ:hover .learn-more-service-hm-text-slash, .civ-eng-summ:hover .learn-more-service-hm-text-slash, .env-eng-summ:hover .learn-more-service-hm-text-slash, .mech-eng-summ:hover .learn-more-service-hm-text-slash, .oil-gas-summ:hover .learn-more-service-hm-text-slash{
+.elect-eng-summ:hover .learn-more-service-hm-text-slash, .civ-eng-summ:hover .learn-more-service-hm-text-slash, .env-eng-summ:hover .learn-more-service-hm-text-slash, .mech-eng-summ:hover .learn-more-service-hm-text-slash, .oil-gas-summ:hover .learn-more-service-hm-text-slash, .safe-secure-summ:hover .learn-more-service-hm-text-slash{
   animation: learn-more-services-hm-slash 500ms linear forwards;
 
 }
 
-.elect-eng-summ:hover svg, .civ-eng-summ:hover svg, .env-eng-summ:hover svg, .mech-eng-summ:hover svg, .oil-gas-summ:hover svg{
+.elect-eng-summ:hover svg, .civ-eng-summ:hover svg, .env-eng-summ:hover svg, .mech-eng-summ:hover svg, .oil-gas-summ:hover svg, .safe-secure-summ:hover svg{
   animation: learn-more-services-hm-btn 500ms linear forwards;
 }
 

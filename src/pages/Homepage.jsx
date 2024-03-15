@@ -2,6 +2,7 @@ import Hero from '../components/Homepage/Hero'
 import PastWorksHm from '../components/Homepage/PastWorksHm'
 import WhatWeDo from '../components/Homepage/WhatWeDo'
 import ServicesHome from '../components/Homepage/ServicesHome'
+import CompanyBrief from '../components/Homepage/CompanyBrief'
 import SafetyPolicy from '../components/Homepage/SafetyPolicy'
 import Footer from '../components/Global/Footer'
 
@@ -18,11 +19,13 @@ function Homepage () {
     
       <WhatWeDo />
 
-      <ServicesHome />
+      {/* <ServicesHome />
+
+      <CompanyBrief />
 
       <SafetyPolicy />
       
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
