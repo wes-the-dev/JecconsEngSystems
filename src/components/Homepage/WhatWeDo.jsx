@@ -2,7 +2,7 @@ import aboutJecconsImg from '../../assets/images/aboutjecchm.png'
 
 function WhatWeDo() {
   return (
-    <section className="aboutJecconsHm py-6 px-12 flex gap-6 border-b-[#B7B7B7] border-[1px] max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:gap-5">
+    <section className="aboutJecconsHm py-6 px-12 max-[770px]:px-5 flex gap-6 border-b-[#B7B7B7] border-[1px] max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:gap-5">
       <div className="aboutJeccImg w-[50%] max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center">
         <img src={aboutJecconsImg} alt="engineers examining a drawing" />
 
