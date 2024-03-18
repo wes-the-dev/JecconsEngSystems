@@ -19,9 +19,9 @@ function Homepage () {
     
       <WhatWeDo />
 
-      {/* <ServicesHome />
+      <ServicesHome />
 
-      <CompanyBrief />
+      {/* <CompanyBrief />
 
       <SafetyPolicy />
       

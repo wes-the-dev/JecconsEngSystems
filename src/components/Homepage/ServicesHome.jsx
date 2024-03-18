@@ -18,25 +18,28 @@ import safeSecureIcon from '../../assets/images/services_icons/safe_secureicon.p
 
 const ServicesHome = () => {
   return (
-    <div className='services-home-page pb-16 pt-24 px-[60px] font-[PP-Telegraf]'>
+    <div className='services-home-page pb-16 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
         
 
         <div className="civil-eng-home flex justify-between gap-10 mb-28">
 
-            <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
-                <div className="service-home-number">
+            <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[45%] max-[1000px]:items-center max-[1000px]:w-[100%] h-fit my-auto">
+                <div className="service-home-number max-[1000px]:hidden">
                     <span className='text-[180px] leading-10'>01</span>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 max-[1000px]:items-center">
                     <div className="civ-eng-summ-title flex gap-3">
                         <img src={civEngIcon} alt="civil-engineering-icon" />
                         <span className='text-[32px]'>Civil Engineering</span> 
                     </div>
-                    <span className=' text-[19px]'>
+                    <div className="civ-eng-home-img w-[55%] max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center min-[1001px]:hidden justify-end">
+                        <img className='' src={civEngImg} alt="engineers working on site" />
+                    </div>
+                    <span className=' text-[19px] max-[1000px]:text-justify'>
                         Our Civil Engineering team at JECCONS, is dedicated to designing and constructing the infrastructure that shapes our world. From bridges to skyscrapers, our projects stand as testaments to innovation and durability.
                     </span>
-                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
+                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between max-[1000px]:w-[200px] max-[1000px]:justify-start]">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
                             <span className='text-[20px]'>LEARN MORE</span>
                             <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
@@ -53,12 +56,12 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-            <div className="civ-eng-home-img w-[50%] flex justify-end">
-                <img src={civEngImg} alt="engineers working on site" />
+            <div className="civ-eng-home-img w-[55%] max-[1000px]:hidden flex justify-end">
+                <img className='' src={civEngImg} alt="engineers working on site" />
             </div>
         </div>
 
-        <div className="elect-eng-home flex gap-6 items-center justify-between mb-28">
+        {/* <div className="elect-eng-home flex gap-6 items-center justify-between mb-28">
             
             <div className="elect-eng-home-img flex items-center w-[50%]">
                 <img src={electEngImg} alt="engineers working on site" />
@@ -93,9 +96,9 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-        </div>
+        </div> */}
 
-        <div className="env-eng-home flex justify-between gap-10 mb-28">
+        {/* <div className="env-eng-home flex justify-between gap-10 mb-28">
 
             <div className="env-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
                 <div className="service-home-number">
@@ -130,9 +133,9 @@ const ServicesHome = () => {
             <div className="env-eng-home-img w-[50%] flex justify-end">
                 <img src={environEngImg} alt="engineers with a windmill model" />
             </div>
-        </div>
+        </div> */}
 
-        <div className="mech-eng-home flex gap-6 items-center justify-between mb-28">
+        {/* <div className="mech-eng-home flex gap-6 items-center justify-between mb-28">
             
             <div className="mech-eng-home-img flex items-center w-[50%]">
                 <img src={mechEngImg} alt="an engineer working" />
@@ -167,9 +170,9 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-        </div>
+        </div> */}
 
-        <div className="oil-gas-home flex justify-between gap-10 mb-28">
+        {/* <div className="oil-gas-home flex justify-between gap-10 mb-28">
 
             <div className="oil-gas-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
                 <div className="service-home-number">
@@ -204,9 +207,9 @@ const ServicesHome = () => {
             <div className="oil-gas-home-img w-[50%] flex justify-end">
                 <img src={oilGasImg} alt="a distribution station" />
             </div>
-        </div>
+        </div> */}
 
-        <div className="safe-secure-home flex gap-6 items-center justify-between mb-28">
+        {/* <div className="safe-secure-home flex gap-6 items-center justify-between mb-28">
             
             <div className="safe-secure-home-img flex items-center w-[50%]">
                 <img src={safeSecureImg} alt="an engineer installing a security camera" />
@@ -241,7 +244,7 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

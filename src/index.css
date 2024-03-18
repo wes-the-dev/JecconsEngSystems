@@ -365,6 +365,10 @@
 
 /* SERVICES HOME PAGE */
 
+.civ-eng-home-img img{
+  /* aspect-ratio: 16/1; */
+}
+
 
 .learn-more-service-hm-text-slash{
   transform: translateX(-100%);
