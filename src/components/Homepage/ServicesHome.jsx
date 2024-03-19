@@ -29,20 +29,20 @@ const ServicesHome = () => {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <div className="civ-eng-summ-title flex justify-center max-[650px]:justify-start gap-3">
+                    <div className="civ-eng-summ-title flex justify-center items-center max-[650px]:justify-start gap-3">
                         <img className='w-[44px] h-[44px]' src={civEngIcon} alt="civil-engineering-icon" />
-                        <span className='text-[32px]'>Civil Engineering</span> 
+                        <span className='text-[32px] max-[650px]:text-[22px]'>Civil Engineering</span> 
                     </div>
                     <div className="civ-eng-home-img max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center min-[1001px]:hidden justify-end">
                         <img className='' src={civEngImg} alt="engineers working on site" />
                     </div>
-                    <span className=' text-[19px] max-[1000px]:text-justify'>
+                    <span className='text-[19px] max-[650px]:text-[17px] max-[1000px]:text-justify'>
                         Our Civil Engineering team at JECCONS, is dedicated to designing and constructing the infrastructure that shapes our world. From bridges to skyscrapers, our projects stand as testaments to innovation and durability.
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
-                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
+                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                             </div>
                         </div>
@@ -85,8 +85,8 @@ const ServicesHome = () => {
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
-                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
+                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                             </div>
                         </div>
