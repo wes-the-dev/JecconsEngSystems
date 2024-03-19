@@ -21,7 +21,7 @@ const ServicesHome = () => {
     <div className='services-home-page pb-16 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
         
 
-        <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-10 mb-28">
+        <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-6 mb-28">
 
             <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:items-center max-[1000px]:w-[100%] h-fit my-auto">
                 <div className="service-home-number max-[1000px]:hidden">
@@ -29,7 +29,7 @@ const ServicesHome = () => {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <div className="civ-eng-summ-title flex justify-center items-center max-[650px]:justify-start gap-3">
+                    <div className="civ-eng-summ-title flex max-[1000px]:justify-center items-center max-[650px]:justify-start gap-3">
                         <img className='w-[44px] h-[44px]' src={civEngIcon} alt="civil-engineering-icon" />
                         <span className='text-[32px] max-[650px]:text-[22px]'>Civil Engineering</span> 
                     </div>
@@ -61,7 +61,7 @@ const ServicesHome = () => {
             </div>
         </div>
 
-        <div className="elect-eng-home flex gap-6 items-center justify-between mb-28 max-[1000px]:mb-10">
+        <div className="elect-eng-home flex gap-6 items-center justify-between mb-28 max-[1000px]:mb-6">
             
             <div className="elect-eng-home-img flex items-center w-[50%] max-[1000px]:hidden">
                 <img src={electEngImg} alt="an engineer working on circuit breakers" />
@@ -102,7 +102,7 @@ const ServicesHome = () => {
             </div>
         </div>
 
-        {/* <div className="env-eng-home flex justify-between gap-10 mb-28">
+        {/* <div className="env-eng-home flex justify-between gap-10 mb-28 max-[1000px]:mb-6">
 
             <div className="env-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
                 <div className="service-home-number">
@@ -134,7 +134,7 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-            <div className="env-eng-home-img w-[50%] flex justify-end">
+            <div className="env-eng-home-img w-[50%] max-[1000px]:hidden flex justify-end">
                 <img src={environEngImg} alt="engineers with a windmill model" />
             </div>
         </div> */}
