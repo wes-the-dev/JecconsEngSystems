@@ -15,6 +15,7 @@ function Hero() {
               {/* <div className="learnMoreBtn max-[850px]:px-[16px] max-[850px]:py-[4px] max-[850px]:text-[18px]">
                 <span>Learn more</span>
               </div> */}
+              
             </div>
             
           </div>
