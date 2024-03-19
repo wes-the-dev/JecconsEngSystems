@@ -21,7 +21,7 @@ const ServicesHome = () => {
     <div className='services-home-page pb-16 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
         
 
-        <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-6 mb-28">
+        <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-8 mb-28">
 
             <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:items-center max-[1000px]:w-[100%] h-fit my-auto">
                 <div className="service-home-number max-[1000px]:hidden">
@@ -61,15 +61,15 @@ const ServicesHome = () => {
             </div>
         </div>
 
-        <div className="elect-eng-home flex gap-6 items-center justify-between mb-28 max-[1000px]:mb-6">
+        <div className="elect-eng-home flex gap-6 items-center max-[1000px]:items-start justify-between mb-28 max-[1000px]:mb-8">
             
             <div className="elect-eng-home-img flex items-center w-[50%] max-[1000px]:hidden">
                 <img src={electEngImg} alt="an engineer working on circuit breakers" />
             </div>
 
             <div className="elect-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:w-[100%] my-auto h-fit">
-                <div className='service-home-number'>
-                    <span className='text-[180px] leading-10 max-[1000px]:hidden '>02</span>
+                <div className='service-home-number  max-[1000px]:hidden'>
+                    <span className='text-[180px] leading-10'>02</span>
                 </div>
                 
                 <div className="flex flex-col gap-4">
