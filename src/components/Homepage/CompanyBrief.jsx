@@ -7,15 +7,15 @@ function CompanyBrief() {
                 100+
             </span>
             <div className="flex flex-col gap-0">
-                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px]">COMPLETED</span>
-                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px]">Projects</span>
+                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px] max-[430px]:text-[10px]">COMPLETED</span>
+                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px] max-[430px]:text-[10px]">Projects</span>
             </div>
         </div>
         <div className="years-experience-hm flex gap-2 items-center">
             <span className="text-[56px] max-[1100px]:text-[50px] max-[900px]:text-[40px] max-[650px]:text-[30px] max-[550px]:text-[20px] max-[430px]:text-[16px]"> 40  </span>
             <div className="flex flex-col gap-0">
-                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px]">YEARS OF</span>
-                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px]">Experience</span>
+                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px] max-[430px]:text-[10px]">YEARS OF</span>
+                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px] max-[430px]:text-[10px]">Experience</span>
             </div>
         </div>
 
@@ -23,8 +23,8 @@ function CompanyBrief() {
             <span className="text-[56px] max-[1100px]:text-[50px] max-[900px]:text-[40px] max-[650px]:text-[30px] max-[550px]:text-[20px] max-[430px]:text-[16px]">
                 50+            </span>
             <div className="flex flex-col gap-0">
-                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px]">CERTIFIED</span>
-                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px]">Professionals</span>
+                <span className="text-[20px] max-[1100px]:text-[16px] max-[900px]:text-[14px] max-[550px]:text-[12px] max-[430px]:text-[10px]">CERTIFIED</span>
+                <span className="text-[30px] font-bold max-[1100px]:text-[26px] max-[900px]:text-[20px] max-[650px]:text-[16px] max-[550px]:text-[12px] max-[430px]:text-[10px]">Professionals</span>
             </div>
         </div>
     </div>
