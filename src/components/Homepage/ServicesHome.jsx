@@ -31,12 +31,12 @@ const ServicesHome = () => {
                 <div className="flex flex-col gap-4">
                     <div className="civ-eng-summ-title flex max-[1000px]:justify-center items-center max-[650px]:justify-start gap-3">
                         <img className='w-[44px] h-[44px]' src={civEngIcon} alt="civil-engineering-icon" />
-                        <span className='text-[32px] max-[650px]:text-[22px]'>Civil Engineering</span> 
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Civil Engineering</span> 
                     </div>
                     <div className="civ-eng-home-img max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center min-[1001px]:hidden justify-end">
                         <img className='' src={civEngImg} alt="engineers working on site" />
                     </div>
-                    <span className='text-[19px] max-[650px]:text-[17px] max-[1000px]:text-justify'>
+                    <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
                         Our Civil Engineering team at JECCONS, is dedicated to designing and constructing the infrastructure that shapes our world. From bridges to skyscrapers, our projects stand as testaments to innovation and durability.
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
@@ -75,12 +75,12 @@ const ServicesHome = () => {
                 <div className="flex flex-col gap-4">
                     <div className="elect-eng-summ-title flex max-[1000px]:justify-center items-center max-[650px]:justify-start gap-3">
                         <img className='w-[44px] h-[44px]' src={electEngIcon} alt="elect-engineering-icon" />
-                        <span className='text-[32px] max-[650px]:text-[22px]'>Electrical Engineering</span> 
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Electrical Engineering</span> 
                     </div>
                     <div className="elect-eng-home-img flex justify-center w-[50%] max-[1000px]:w-[100%] min-[1001px]:hidden">
                         <img src={electEngImg} alt="an engineer working on circuit breakers" />
                     </div>
-                    <span className='text-[19px] max-[650px]:text-[17px] text-justify'>
+                    <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
                         At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
@@ -102,24 +102,27 @@ const ServicesHome = () => {
             </div>
         </div>
 
-        {/* <div className="env-eng-home flex justify-between gap-10 mb-28 max-[1000px]:mb-6">
+        <div className="env-eng-home flex justify-between gap-10 mb-28 max-[1000px]:mb-8">
 
-            <div className="env-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
-                <div className="service-home-number">
+            <div className="env-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:w-[100%] h-fit my-auto">
+                <div className="service-home-number max-[1000px]:hidden">
                     <span className='text-[180px] leading-10'>03</span>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <div className="env-eng-summ-title flex gap-3">
+                    <div className="env-eng-summ-title flex gap-3 max-[1000px]:justify-center max-[650px]:justify-start items-center">
                         <img className='w-[44px] h-[44px]' src={environEngIcon} alt="environ-engineering-icon" />
-                        <span className='text-[32px]'>Environmental Engineering</span> 
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Environmental Engineering</span> 
                     </div>
-                    <span className=' text-[19px]'>
+                    <div className="env-eng-home-img w-[100%] min-[1001px]:hidden flex justify-center">
+                        <img src={environEngImg} alt="engineers with a windmill model" />
+                    </div>
+                    <span className=' text-[19px] max-[650px]:text-[17px]'>
                     At JECCONS, we provide Environmental Engineering services that ensure projects not only comply with regulations but also contribute positively to the environment. We offer Waste Management Solutions, Environmental Impact Assessments, Remediation Services with Sustainable Design
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
                             <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
 
                             </div>
@@ -137,29 +140,32 @@ const ServicesHome = () => {
             <div className="env-eng-home-img w-[50%] max-[1000px]:hidden flex justify-end">
                 <img src={environEngImg} alt="engineers with a windmill model" />
             </div>
-        </div> */}
+        </div>
 
-        {/* <div className="mech-eng-home flex gap-6 items-center justify-between mb-28">
+        <div className="mech-eng-home flex gap-6 items-center justify-between mb-28">
             
-            <div className="mech-eng-home-img flex items-center w-[50%]">
+            <div className="mech-eng-home-img flex items-center w-[50%] max-[1000px]:hidden">
                 <img src={mechEngImg} alt="an engineer working" />
             </div>
 
-            <div className="mech-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] my-auto h-fit">
-                <div className='service-home-number'>
+            <div className="mech-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:w-[100%] my-auto h-fit">
+                <div className='service-home-number max-[1000px]:hidden'>
                     <span className='text-[180px] leading-10'>04</span>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <div className="mech-eng-summ-title flex gap-3">
-                        <img src={mechEngIcon} alt="mech-engineering-icon" />
-                        <span className='text-[32px]'>Mechanical Engineering</span> 
+                    <div className="mech-eng-summ-title flex gap-3 items-center max-[1000px]:justify-center max-[650px]:justify-start">
+                        <img className='w-[44px] h-[44px]' src={mechEngIcon} alt="mech-engineering-icon" />
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Mechanical Engineering</span> 
                     </div>
-                    <span className=' text-[19px]'>
+                    <div className="mech-eng-home-img flex items-center max-[1000px]:justify-center w-[100%] min-[1001px]:hidden">
+                        <img src={mechEngImg} alt="an engineer working" />
+                    </div>
+                    <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
                         At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
                             <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
 
                             </div>
@@ -174,7 +180,7 @@ const ServicesHome = () => {
                 </div>
                 
             </div>
-        </div> */}
+        </div>
 
         {/* <div className="oil-gas-home flex justify-between gap-10 mb-28">
 
