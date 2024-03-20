@@ -18,7 +18,7 @@ import safeSecureIcon from '../../assets/images/services_icons/safe_secureicon.p
 
 const ServicesHome = () => {
   return (
-    <div className='services-home-page pb-16 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
+    <div className='services-home-page pb-5 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
         
 
         <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-8 mb-28">
@@ -142,7 +142,7 @@ const ServicesHome = () => {
             </div>
         </div>
 
-        <div className="mech-eng-home flex gap-6 items-center justify-between mb-28">
+        <div className="mech-eng-home flex gap-6 items-center justify-between mb-28 max-[1000px]:mb-8">
             
             <div className="mech-eng-home-img flex items-center w-[50%] max-[1000px]:hidden">
                 <img src={mechEngImg} alt="an engineer working" />
@@ -161,6 +161,86 @@ const ServicesHome = () => {
                         <img src={mechEngImg} alt="an engineer working" />
                     </div>
                     <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
+                        At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
+                    </span> 
+                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
+                        <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
+                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+
+                            </div>
+                        </div>
+                        <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div className="oil-gas-home flex justify-between gap-10 mb-28 max-[1000px]:mb-8">
+
+            <div className="oil-gas-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:w-[100%] h-fit my-auto">
+                <div className="service-home-number max-[1000px]:hidden">
+                    <span className='text-[180px] leading-10'>05</span>
+                </div>
+
+                <div className="flex flex-col gap-4">
+                    <div className="oil-gas-summ-title flex gap-3 items-center max-[1000px]:justify-center max-[650px]:justify-start">
+                        <img className='w-[44px] h-[44px]' src={oilGasIcon} alt="oil-gas-icon" />
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Oil and Gas</span> 
+                    </div>
+                    <div className="oil-gas-home-img w-[100%] min-[1001px]:hidden flex justify-center">
+                        <img src={oilGasImg} alt="a distribution station" />
+                    </div>
+                    <span className='text-[19px] max-[650px]:text-[17px]'>
+                        JECCONS offers a comprehensive suite of Oil and Gas services, ensuring operational excellence and safety in one of the world’s most vital industries.
+                    </span>
+                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
+                        <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
+                            <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
+                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+
+                            </div>
+                        </div>
+                        <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+            <div className="oil-gas-home-img w-[50%] max-[1000px]:hidden flex justify-end">
+                <img src={oilGasImg} alt="a distribution station" />
+            </div>
+        </div>
+
+        <div className="safe-secure-home flex gap-6 items-center justify-between mb-28 max-[1000px]:mb-8">
+            
+            <div className="safe-secure-home-img flex items-center w-[50%] max-[1000px]:hidden">
+                <img src={safeSecureImg} alt="an engineer installing a security camera" />
+            </div>
+
+            <div className="safe-secure-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:w-[100%] my-auto h-fit">
+                <div className='service-home-number max-[1000px]:hidden'>
+                    <span className='text-[180px] leading-10'>06</span>
+                </div>
+                <div className="flex flex-col gap-4">
+                    <div className="mech-eng-summ-title flex gap-3 items-center max-[1000px]:justify-center max-[650px]:justify-start">
+                        <img className='w-[44px] h-[44px]' src={safeSecureIcon} alt="safe-secure-icon" />
+                        <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Safety and Security</span> 
+                    </div>
+                    <div className="safe-secure-home-img flex items-center justify-center w-[100%] min-[1001px]:hidden">
+                        <img src={safeSecureImg} alt="an engineer installing a security camera" />
+                    </div>
+                    <span className='text-[19px] max-[650px]:text-[17px]'>
                         At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
                     </span>
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
@@ -181,80 +261,6 @@ const ServicesHome = () => {
                 
             </div>
         </div>
-
-        {/* <div className="oil-gas-home flex justify-between gap-10 mb-28">
-
-            <div className="oil-gas-summ cursor-pointer flex flex-col gap-4 w-[50%] h-fit my-auto">
-                <div className="service-home-number">
-                    <span className='text-[180px] leading-10'>05</span>
-                </div>
-
-                <div className="flex flex-col gap-4">
-                    <div className="oil-gas-summ-title flex gap-3">
-                        <img src={oilGasIcon} alt="oil-gas-icon" />
-                        <span className='text-[32px]'>Oil and Gas</span> 
-                    </div>
-                    <span className=' text-[19px]'>
-                        JECCONS offers a comprehensive suite of Oil and Gas services, ensuring operational excellence and safety in one of the world’s most vital industries.
-                    </span>
-                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
-                        <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
-                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
-
-                            </div>
-                        </div>
-                        <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        
-
-                    </div>
-                </div>
-                
-            </div>
-            <div className="oil-gas-home-img w-[50%] flex justify-end">
-                <img src={oilGasImg} alt="a distribution station" />
-            </div>
-        </div> */}
-
-        {/* <div className="safe-secure-home flex gap-6 items-center justify-between mb-28">
-            
-            <div className="safe-secure-home-img flex items-center w-[50%]">
-                <img src={safeSecureImg} alt="an engineer installing a security camera" />
-            </div>
-
-            <div className="safe-secure-summ cursor-pointer flex flex-col gap-4 w-[50%] my-auto h-fit">
-                <div className='service-home-number'>
-                    <span className='text-[180px] leading-10'>06</span>
-                </div>
-                <div className="flex flex-col gap-4">
-                    <div className="mech-eng-summ-title flex gap-3">
-                        <img src={safeSecureIcon} alt="safe-secure-icon" />
-                        <span className='text-[32px]'>Safety and Security</span> 
-                    </div>
-                    <span className=' text-[19px]'>
-                        At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
-                    </span>
-                    <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
-                        <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                            <span className='text-[20px]'>LEARN MORE</span>
-                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
-
-                            </div>
-                        </div>
-                        <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        
-
-                    </div>
-                </div>
-                
-            </div>
-        </div> */}
     </div>
   )
 }

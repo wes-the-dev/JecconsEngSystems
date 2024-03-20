@@ -21,9 +21,9 @@ function Homepage () {
 
       <ServicesHome />
 
-      {/* <CompanyBrief />
+      <CompanyBrief />
 
-      <SafetyPolicy />
+      {/* <SafetyPolicy />
       
       <Footer /> */}
     </div>
