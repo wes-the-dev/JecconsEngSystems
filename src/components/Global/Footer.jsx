@@ -1,12 +1,12 @@
 
 function Footer() {
   return (
-    <section className="footer font-['Cabinet'] text-white pt-[72px] pb-[42px] px-[100px] bg-[#0F0828]">
-        <div className="links-contact-card flex justify-between mb-14">
-          <div className="quick-service-links flex gap-8">
-            <div className="quickLinks w-[300px]">
+    <section className="footer font-['Cabinet'] text-white pt-[72px] pb-[42px] px-[100px] bg-[#0F0828] max-[950px]:px-[60px] max-[770px]:px-5">
+        <div className="links-contact-card flex justify-between mb-14 max-[865px]:flex-col">
+          <div className="quick-service-links flex gap-8 max-[865px]:mb-8 justify-between">
+            <div className="quickLinks w-[300px] max-[1200px]:w-fit">
               <span className=' font-semibold text-sm text-[#A9B9E2] '>Quick Links</span>
-                <ul className=' mt-4 font-medium text-base'>
+                <ul className=' mt-4 max-[770px]:mt-2 font-medium text-base max-[500px]:text-[12px]'>
                   <li>Home</li>
                   <li>About Us</li>
                   <li>Services</li>
@@ -17,7 +17,7 @@ function Footer() {
             
             <div className="serviceLinks">
               <span className=' font-semibold text-sm text-[#A9B9E2] '>Services</span>
-                  <ul className=' mt-4 font-medium text-base'>
+                  <ul className=' mt-4 max-[770px]:mt-2 font-medium text-base max-[500px]:text-[12px]'>
                     <li>Civil Engineering</li>
                     <li>Electrical Engineering</li>
                     <li>Environmental Engineering</li>
@@ -26,7 +26,7 @@ function Footer() {
                   </ul>
             </div>
           </div>
-          <div className="footContactCard bg-white text-[#222] px-12 py-6 rounded-[10px]">
+          <div className="footContactCard bg-white text-[#222] px-12 py-6 rounded-[10px] max-[500px]:px-6 max-[500px]:text-[12px]">
               <h3 className='text-[#222] font-extrabold text-2xl mb-6'>Let&apos;s Talk  </h3>
               <div className="emailInfo flex gap-2 mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@ function Footer() {
         <div className="footerDivide h-[1px] mb-8 bg-[#EAECF0]">
 
         </div>
-        <div className="footerLogo flex justify-between">
+        <div className="footerLogo flex justify-between items-center max-[370px]:flex-col max-[370px]:gap-2">
           <svg width="145" height="45" viewBox="0 0 145 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_277_1669)">
             <path d="M33.089 22.8504C33.8417 23.084 34.0411 24.0559 33.441 24.5669L29.1156 28.2503C28.7371 28.5725 28.6528 29.1239 28.9178 29.5446L31.7494 34.0402C32.1688 34.7061 31.6902 35.5731 30.9032 35.5731H25.4777C24.9668 35.5731 24.5381 35.9581 24.4835 36.466C24.3008 38.1635 24.1164 39.8806 23.924 41.6695C23.8363 42.4858 22.8566 42.8544 22.2526 42.2984L18.0454 38.4251C17.6375 38.0495 17.0019 38.0776 16.6286 38.4877L13.3549 42.0844C12.7875 42.7077 11.7508 42.3924 11.6264 41.5587C11.3458 39.6772 11.075 37.86 10.7998 36.0165C10.7229 35.5013 10.2634 35.1315 9.74367 35.1665L4.75491 35.5021C3.95879 35.5556 3.42367 34.701 3.81955 34.0082L6.68529 28.993C6.93259 28.5602 6.8234 28.0114 6.42929 27.7062L2.2816 24.4944C1.65857 24.012 1.81237 23.032 2.55325 22.7637C4.31134 22.1269 6.02145 21.5077 7.76072 20.8766C8.23623 20.7041 8.50796 20.2036 8.39368 19.7108L7.1793 14.4744C6.99625 13.6851 7.77872 13.0171 8.5295 13.3218L13.5065 15.3417C13.9994 15.5417 14.5626 15.3209 14.7882 14.8392L16.9765 10.1656C17.3271 9.41687 18.3832 9.39283 18.7675 10.1249L21.353 15.0497C21.6007 15.5215 22.1748 15.7162 22.6583 15.4925L27.1537 13.4125C27.8895 13.072 28.7034 13.7028 28.5572 14.5004L27.5128 20.1981C27.4216 20.696 27.7167 21.1835 28.2001 21.3335L33.089 22.8504ZM26.7304 26.6885C26.7464 21.626 22.7089 17.3811 17.8644 17.3664C13.0198 17.3516 8.94894 21.5458 8.91073 26.6164C8.86775 31.5101 13.2092 36.199 17.7784 36.1973C22.4351 36.1908 26.7161 31.6461 26.7304 26.6885Z" fill="white"/>
@@ -119,7 +119,7 @@ function Footer() {
             </clipPath>
             </defs>
           </svg>
-          <span>© 2024 Jeccons. All rights reserved.</span>
+          <span className=" max-[500px]:text-[12px]">© 2024 Jeccons. All rights reserved.</span>
         </div>
         
 

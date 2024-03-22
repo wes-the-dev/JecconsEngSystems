@@ -11,7 +11,7 @@ function SafetyPolicy() {
           <img src={safetyPolicyImgMobile} alt="a health personnel" />
         </div>
         <p className='text-[20px] max-[1020px]:text-justify max-[650px]:text-[18px]'>JECCONS ENGINEERING SYSTEMS LTD is committed to the provision of safe working environment for the company&apos;s employees, subcontractors, local communities and others affected by its operations. Jeccons Engineering conducts its operations such as to minimize damage to personnel and the environment Federal Statutory Regulations and client&apos;s HSE policy...</p>
-        <div className="about-hm-learn-more-btn max-[1200px]:mt-6 flex gap-[10px] border-transparent py-[18.5px] px-8 bg-[#E5E5E5] w-fit text-[var(--primary-red)] font-bold rounded-[100px] ">
+        <div className="about-hm-learn-more-btn max-[1200px]:mt-3 flex gap-[10px] border-transparent py-[18.5px] px-8 bg-[#E5E5E5] w-fit text-[var(--primary-red)] font-bold rounded-[100px] ">
           <span>Learn about policy</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.4" d="M20 12H4" stroke="#661A2B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
