@@ -9,7 +9,7 @@ function WhatWeDo() {
       </div>
       <div className="about-jeccons-details-home w-[50%] font-[PP-Telegraf] flex flex-col gap-8 justify-center max-[1000px]:w-[100%] max-[1000px]:gap-2 max-[1000px]:items-center">
         <h3 className='font-bold  text-[var(--primary-red)]'>About Jeccons</h3>
-        <h2 className='text-[36px] max-[770px]:text-center'>Engineering Excellence, Building Futures</h2>
+        <h2 className='text-[36px] max-[770px]:text-center font-bold'>Engineering Excellence, Building Futures</h2>
         <span className='max-[770px]:text-justify'>
         JECCONS ENGINEERING SYSTEM is an engineering and construction firm specializing in safety, water, energy, maintenance and construction. We provide services to several relevant sectors of Nigerian economy such as water, energy, security manufacturing, oil and gas with our cache of international professionals and experts. JECCONS ENGINEERING name has been synonymous with excellence and quality in all its relevant industries.
         </span>

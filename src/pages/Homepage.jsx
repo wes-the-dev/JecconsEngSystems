@@ -23,9 +23,9 @@ function Homepage () {
 
       <CompanyBrief />
 
-      {/* <SafetyPolicy />
+      <SafetyPolicy />
       
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
