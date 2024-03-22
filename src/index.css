@@ -337,7 +337,8 @@
 
 .pastWorks{
   display: flex;
-  padding-inline: 42px;
+  padding-inline: 20px;
+
   padding-block: 40px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(36, 68, 108, 0.126);
