@@ -52,7 +52,7 @@ function NavMenu() {
               </div>
 
               <div className="menuListItem">
-                <Link to="/" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
+                <Link to="/about-us" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
                   <span>About</span>
                   <div className="menuHovLine"></div>
                 </Link>
