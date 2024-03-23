@@ -1,6 +1,13 @@
+import { Link, useLocation } from 'react-router-dom';
 
 function NavMenu() {
+
+  // I jused the browser api to get the current url useLocation allows you to do so NOTE: console.log() and see the values it's an object
+  const location = useLocation();
+  const isHome = location?.pathname === '/';
+
   return (
+    
     <nav className="mainMenu ">
             <div className="companyLogo max-[850px]:hidden">
               <svg width="145" height="46" viewBox="0 0 145 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,14 +45,19 @@ function NavMenu() {
             </div>
             <div className="menuList max-[850px]:hidden">
               <div className="menuListItem">
+                <Link to="/" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
                 <span>Home</span>
                 <div className="menuHovLine"></div>
+        </Link>
               </div>
 
               <div className="menuListItem">
-                <span>About Us</span>
-                <div className="menuHovLine"></div>
+                <Link to="/" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
+                  <span>About</span>
+                  <div className="menuHovLine"></div>
+                </Link>
               </div>
+              {/*    Continue this way chief */}
               <div className="menuListItem">
                 <span>Services</span>
                 <div className="menuHovLine"></div>
