@@ -43,7 +43,7 @@ function NavMenu() {
               </div>
 
               <div className="menuListItem">
-                <span>About</span>
+                <span>About Us</span>
                 <div className="menuHovLine"></div>
               </div>
               <div className="menuListItem">

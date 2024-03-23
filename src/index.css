@@ -185,7 +185,8 @@
   gap: 46px;
   padding-block: 12px;
   color: #fff;
-  /* color: var(--primary-blue); */
+  /* color: var(--black); */
+  /* text-shadow: 0.4px 0.4px #fff;  */
 }
 
 .menuListItem{
@@ -265,7 +266,9 @@
   padding-top: 65px;
   width: 60%;
   /* margin-left: 60px; */
-  /* color: var(--black); */
+  /* color: var(--black);
+  text-shadow: 2px 2px 2px #fff;  */
+
   color: #fff;
 }
 
@@ -306,7 +309,8 @@
 .expPhrase p{
   margin-bottom: 30px;
   line-height: 38.969px;
-
+  /* color: var(--black); */
+  /* text-shadow: 2px 2px 2px #fff;  */
 }
 
 .learnMoreBtn{
@@ -414,4 +418,11 @@
 
 .service-home-number{
   color: #B7B7B7;
+}
+
+
+/** ABOUT US MAIN PAGE**/
+
+.aboutUs{
+  color: #222;
 }
