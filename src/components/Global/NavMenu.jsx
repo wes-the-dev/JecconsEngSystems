@@ -8,7 +8,7 @@ function NavMenu() {
 
   return (
     
-    <nav className="mainMenu ">
+    <nav className="mainMenu absolute h-[100px] w-[100%] z-30">
             <div className="companyLogo max-[850px]:hidden">
               <svg width="145" height="46" viewBox="0 0 145 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_470_334)">

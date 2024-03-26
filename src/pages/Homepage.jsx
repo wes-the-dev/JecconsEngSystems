@@ -4,14 +4,14 @@ import WhatWeDo from '../components/Homepage/WhatWeDo'
 import ServicesHome from '../components/Homepage/ServicesHome'
 import CompanyBrief from '../components/Homepage/CompanyBrief'
 import SafetyPolicy from '../components/Homepage/SafetyPolicy'
-import Footer from '../components/Global/Footer'
+// import Footer from '../components/Global/Footer'
 
 // import projectTile from '../assets/images/project_title_tiles/title_tile1.png'
 
 
 function Homepage () {
   return (
-    <div>
+    <div className='relative'>
       
       <Hero />
   
@@ -25,7 +25,7 @@ function Homepage () {
 
       <SafetyPolicy />
       
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

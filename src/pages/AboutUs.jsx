@@ -1,14 +1,8 @@
-import NavMenu from '../components/Global/NavMenu'
-import Footer from '../components/Global/Footer'
+import AboutUsHero from "../components/AboutUs/AboutUsHero"
 
 const AboutUs = () => {
   return (
-    <div className='aboutUs'>
-        <NavMenu />
-            <h1>About Us</h1>
-        <Footer />
-        
-    </div>
+    <AboutUsHero />
   )
 }
 

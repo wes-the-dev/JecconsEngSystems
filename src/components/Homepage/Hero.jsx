@@ -1,8 +1,8 @@
-import NavMenu from "../Global/NavMenu"
+// import NavMenu from "../Global/NavMenu"
 function Hero() {
   return (
     <section className="heroSection max-[650px]:overflow-hidden">
-        <NavMenu />
+        {/* <NavMenu /> */}
 
         <div className="heroMain max-[1060px]:w-[100%] max-[850px]:mt-[-35px] max-[850px]:pb-[45px]">
           <div className="jecconsPhrase max-[1060px]:mx-[50px] max-[770px]:mx-5">
