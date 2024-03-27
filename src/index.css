@@ -169,7 +169,7 @@
 .mainMenu{
   display: flex;
   justify-content: space-around;
-  justify-items: flex-start;
+  /* justify-items: flex-start; */
   align-items: center;
   font-family: 'PP-Telegraf';
   font-size: 18px;
@@ -184,6 +184,7 @@
 .menuList{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 46px;
   padding-block: 12px;
   color: #fff;
@@ -428,4 +429,10 @@
   color: #222;
   background-image: url(./assets/images/who-we-arebg.png);
   background-color: #F9F7FD;
+}
+
+.technicians-certs{
+  background: url('assets/images/map-base 1.png');
+  /* background-position: 100%; */
+  background-size: contain;
 }
