@@ -1,12 +1,22 @@
+import expertsImg from '../../assets/images/experts-in-dreams.png'
 
 const ExpertsInDreams = () => {
   return (
-    <div className='experts-in-dreams flex gap-6'>
-        <div className="experts-in-dreams-text">
+    <div className='experts-in-dreams flex justify-between gap-6'>
+        <div className="experts-in-dreams-text flex flex-col gap-8 justify-center pl-[60px] w-[50%]">
+            <h3 className='text-[32px]'>We are experts in building dreams</h3>
+            <p className='text-[20px]'>Utilizing our expertise in structural, civil, and mechanical engineering, we handle everything from rehabilitation and maintenance to repairs or replacements. We&apos;ve got your back whether it&apos;s foundations, walls, floor slabs, complex roofing, manhole drainage, or storm water diversion.</p>
+            <div className="about-hm-learn-more-btn max-[1200px]:mt-3 flex gap-[10px] border-transparent py-[18.5px] px-8 bg-[#E5E5E5] w-fit text-[var(--primary-red)] text-[18px] font-bold rounded-[100px] ">
+                <span>Let&apos;s talk</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M20 12H4" stroke="#661A2B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M15 17C15 17 20 13.3176 20 12C20 10.6824 15 7 15 7" stroke="#661A2B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
 
-        </div> 
-        <div className="experts-in-dreams-img">
-
+        </div>
+        </div>
+        <div className="experts-in-dreams-img flex justify-end w-[50%]">
+            <img src={expertsImg} alt="" />
         </div>
     </div>
   )

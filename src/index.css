@@ -436,3 +436,21 @@
   /* background-position: 100%; */
   background-size: contain;
 }
+
+.text-scroll-main-wrap{
+  animation: global-dedicated-scroll 20s linear infinite;
+  animation-play-state: running;
+}
+
+.text-scroll-main-wrap:hover{
+  animation-play-state: paused;
+}
+
+@keyframes global-dedicated-scroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
