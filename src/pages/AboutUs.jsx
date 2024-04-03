@@ -9,9 +9,9 @@ const AboutUs = () => {
     <>
       <AboutUsHero />
       <MissionVision />
-      <AboutBrief />
-      <ExpertsInDreams />
-      <MeettheTeam />
+      {/* <AboutBrief /> */}
+      {/* <ExpertsInDreams />
+      <MeettheTeam /> */}
     </>   
   )
 }
