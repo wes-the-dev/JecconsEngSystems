@@ -10,8 +10,8 @@ const AboutUs = () => {
       <AboutUsHero />
       <MissionVision />
       <AboutBrief />
-      {/* <ExpertsInDreams />
-      <MeettheTeam /> */}
+      <ExpertsInDreams />
+      <MeettheTeam />
     </>   
   )
 }
