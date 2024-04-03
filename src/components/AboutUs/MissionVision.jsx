@@ -2,7 +2,7 @@ import missionImg from '../../assets/images/mission-img.png'
 
 const MissionVision = () => {
   return (
-        <div className="mission-vision-value px-[60px] max-[770px]:px-5 mb-[100px] flex items-center justify-between gap-6 max-[850px]:flex-col">
+        <div className="mission-vision-value px-[60px] max-[770px]:px-5 mb-[100px] max-[770px]:mb-[20px] flex items-center justify-between gap-6 max-[850px]:flex-col">
             <div className="mission-vision-img w-[50%] max-[850px]:w-[100%]">
                 <img className='w-[100%]' src={missionImg} alt="an engineer in an industrial plant" />
             </div>

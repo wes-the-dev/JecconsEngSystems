@@ -9,7 +9,7 @@ const AboutUs = () => {
     <>
       <AboutUsHero />
       <MissionVision />
-      {/* <AboutBrief /> */}
+      <AboutBrief />
       {/* <ExpertsInDreams />
       <MeettheTeam /> */}
     </>   
