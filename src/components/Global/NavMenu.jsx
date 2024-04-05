@@ -5,6 +5,7 @@ function NavMenu() {
   // I jused the browser api to get the current url useLocation allows you to do so NOTE: console.log() and see the values it's an object
   const location = useLocation();
   const isHome = location?.pathname === '/';
+  const isServices = location?.pathname === '/services';
 
   return (
     
@@ -45,22 +46,24 @@ function NavMenu() {
             </div>
             <div className="menuList max-[850px]:hidden">
               <div className="menuListItem">
-                <Link to="/" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
-                <span>Home</span>
-                <div className="menuHovLine"></div>
-        </Link>
+                <Link to="/" className={`menuListItem ${isHome || isServices  ? 'text-white' : 'text-black'}`}>
+                      <span>Home</span>
+                      <div className="menuHovLine"></div>
+              </Link>
               </div>
 
               <div className="menuListItem">
-                <Link to="/about-us" className={`menuListItem ${isHome ? 'text-white' : 'text-black'}`}>
+                <Link to="/about-us" className={`menuListItem ${isHome || isServices ? 'text-white' : 'text-black'}`}>
                   <span>About</span>
                   <div className="menuHovLine"></div>
                 </Link>
               </div>
               {/*    Continue this way chief */}
               <div className="menuListItem">
-                <span>Services</span>
-                <div className="menuHovLine"></div>
+                <Link to="/services" className={`menuListItem ${isHome || isServices ? 'text-white' : 'text-black'}`}>
+                  <span>Services</span>
+                  <div className="menuHovLine"></div>
+                </Link>
               </div>
               <div className="menuListItem">
                 <span>Portfolio</span>

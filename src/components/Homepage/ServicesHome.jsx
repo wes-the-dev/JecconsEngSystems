@@ -161,7 +161,7 @@ const ServicesHome = () => {
                         <img src={mechEngImg} alt="an engineer working" />
                     </div>
                     <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
-                        At JECCONS, we offer comprehensive electrical engineering services tailored to meet the demands of modern infrastructure and technology. Our team of skilled professionals specializes in the design, development, and implementation of innovative electrical systems that power progress.
+                        JECCONS&apos;s Mechanical Engineering services are at the forefront of innovation, designing systems and components that drive industry and improve quality of life.
                     </span> 
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
