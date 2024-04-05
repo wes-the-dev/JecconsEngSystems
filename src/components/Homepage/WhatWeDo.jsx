@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import aboutJecconsImg from '../../assets/images/aboutjecchm.png'
 
 function WhatWeDo() {
@@ -13,7 +14,7 @@ function WhatWeDo() {
         <span className='max-[770px]:text-justify'>
         JECCONS ENGINEERING SYSTEM is an engineering and construction firm specializing in safety, water, energy, maintenance and construction. We provide services to several relevant sectors of Nigerian economy such as water, energy, security manufacturing, oil and gas with our cache of international professionals and experts. JECCONS ENGINEERING name has been synonymous with excellence and quality in all its relevant industries.
         </span>
-        <a href="../">
+        <Link to="/about-us">
           <div className="about-hm-learn-more-btn flex items-center gap-[10px] border-transparent py-[18.5px] px-8 bg-[#E5E5E5] w-fit text-[var(--primary-red)] font-bold rounded-[100px]  text-[18px] max-[1032px]:px-6 max-[1032px]:py-[16px] max-[1032px]:text-[14px] max-[1000px]:mt-[15px]">
             <span>Learn More</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +23,7 @@ function WhatWeDo() {
             </svg>
 
           </div>
-        </a>
+        </Link>
         
       </div>
     </section>

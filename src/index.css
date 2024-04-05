@@ -475,6 +475,45 @@
   grid-template-columns: 1fr 1fr 1fr
 }
 
+.civ-eng-services-imgs{
+  display: grid;
+  grid-template-areas: 
+    'service-one service-two service-three' 
+    'service-four service-five service-six'
+    'service-seven service-eight .'
+  ; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px 16px;
+}
+
+.pumbling-networks-img{
+  background: url(assets/images/civil-eng-images/plumbing-networks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.real-estate-img{
+  background: url(assets/images/civil-eng-images/real-estate.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.bridge-construction-img{
+  background: url(assets/images/civil-eng-images/bridge-construction.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.flowstation-pipework-img{
+  background: url(assets/images/civil-eng-images/flowstation-pipework.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
 @media(max-width: 1300px){
   .services-set-wrap{
       grid-template-areas: 
