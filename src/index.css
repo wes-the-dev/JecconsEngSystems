@@ -163,7 +163,7 @@
 
 
 .companyLogo{
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .mainMenu{
@@ -176,7 +176,7 @@
   font-weight: 400;
   /* padding-block: 12px; */
   height: 100px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
   /* position: sticky;
   top: 0; */
 }
@@ -186,7 +186,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 46px;
-  padding-block: 12px;
+  /* padding-block: 12px; */
   color: #fff;
   /* color: var(--black); */
   /* text-shadow: 0.4px 0.4px #fff;  */
@@ -486,6 +486,16 @@
   gap: 36px 16px;
 }
 
+.secure-safety-services-imgs{
+  display: grid;
+  grid-template-areas: 
+    'service-one service-two service-three' 
+    'service-four service-five service-six'
+  ; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px 16px;
+}
+
 .pumbling-networks-img{
   background: url(assets/images/civil-eng-images/plumbing-networks.png);
   background-size: cover;
@@ -509,6 +519,98 @@
 
 .flowstation-pipework-img{
   background: url(assets/images/civil-eng-images/flowstation-pipework.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.building-erection-img{
+  background: url(assets/images/civil-eng-images/building-erection.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.site-preparation-img{
+  background: url(assets/images/civil-eng-images/site-preparation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.hydroplant-construction-img{
+  background: url(assets/images/civil-eng-images/hydroplant-construction.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.erosion-control-img{
+  background: url(assets/images/civil-eng-images/erosion-control.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+/* SECURITY AND SAFETY SERVICES */
+.fire-extinguisher-img{
+  background: url(assets/images/secure-safety-images/fire-extinguisher.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.fire-hoses-img{
+  background: url(assets/images/secure-safety-images/fire-hoses.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.firehose-reels-img{
+  background: url(assets/images/secure-safety-images/firehose-reels.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.reel-cabinets-img{
+  background: url(assets/images/secure-safety-images/reel-cabinets.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.fire-hydrants-img{
+  background: url(assets/images/secure-safety-images/fire-hydrants.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.valves-rises-img{
+  background: url(assets/images/secure-safety-images/valves-risers.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.fire-doors-img{
+  background: url(assets/images/secure-safety-images/fire-doors.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.detectors-img{
+  background: url(assets/images/secure-safety-images/detectors.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.ai-cctv-img{
+  background: url(assets/images/secure-safety-images/ai-cctv.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
@@ -543,6 +645,31 @@
     grid-template-columns: 1fr
 
   }
+}
+
+@media(max-width: 800px){
+  .civ-eng-services-imgs{
+      grid-template-areas: 
+          'service-one service-two'
+          'service-three service-four'
+          'service-five service-six'
+          'service-seven service-eight'
+      ;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
+  }
+  .secure-safety-services-imgs{
+    grid-template-areas: 
+        'service-one service-two'
+        'service-three service-four'
+        'service-five service-six'
+    ;
+
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 8px;
+}
+
 }
 
 .civil-eng-link{

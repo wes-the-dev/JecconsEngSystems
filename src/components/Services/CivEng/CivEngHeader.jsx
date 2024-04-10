@@ -2,7 +2,7 @@ import civEngHeaderImg from '../../../assets/images/civil-eng-images/civ-eng-hea
 
 const CivEngHeader = () => {
   return (
-    <div className="px-[60px] mb-[100px]">
+    <div className="px-[60px] max-[700px]:px-5 max-[700px]:mb-8 mb-[100px]">
         <h2 className="text-[40px] mb-2">Civil Engineering</h2>
         <p className="text-[24px] mb-[60px]">Real Estate, Installation, Design, Construction and Project Management</p>
         <div className="civ-eng-header-img mb-11">
