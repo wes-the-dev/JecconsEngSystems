@@ -486,7 +486,7 @@
   gap: 36px 16px;
 }
 
-.secure-safety-services-imgs{
+.secure-safety-services-imgs, .elect-eng-services-imgs{
   display: grid;
   grid-template-areas: 
     'service-one service-two service-three' 
@@ -494,6 +494,62 @@
   ; 
   grid-template-columns: 1fr 1fr 1fr;
   gap: 36px 16px;
+}
+
+@media(max-width: 1300px){
+  .services-set-wrap{
+      grid-template-areas: 
+          'service-one service-two'
+          'service-three service-four'
+          'service-five service-six'
+          'service-seven .'
+      ;
+
+    grid-template-columns: 1fr 1fr
+
+  }
+}
+
+@media(max-width: 900px){
+  .services-set-wrap{
+      grid-template-areas: 
+          'service-one'
+          'service-two'
+          'service-three'
+          'service-four'
+          'service-five'
+          'service-six'
+          'service-seven'
+      ;
+
+    grid-template-columns: 1fr
+
+  }
+}
+
+@media(max-width: 800px){
+  .civ-eng-services-imgs{
+      grid-template-areas: 
+          'service-one service-two'
+          'service-three service-four'
+          'service-five service-six'
+          'service-seven service-eight'
+      ;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
+  }
+  .secure-safety-services-imgs, .elect-eng-services-imgs{
+    grid-template-areas: 
+        'service-one service-two'
+        'service-three service-four'
+        'service-five service-six'
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 8px;
+  }
+
 }
 
 .pumbling-networks-img{
@@ -616,60 +672,205 @@
   background-position: 100%;
 }
 
-@media(max-width: 1300px){
-  .services-set-wrap{
-      grid-template-areas: 
-          'service-one service-two'
-          'service-three service-four'
-          'service-five service-six'
-          'service-seven .'
-      ;
-
-    grid-template-columns: 1fr 1fr
-
-  }
+/*ELECT ENG SERVICE IMAGES*/
+.hydroelectric-plant-img{
+  background: url(assets/images/elect-eng-images/hydroelectric-plants.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
-@media(max-width: 900px){
-  .services-set-wrap{
-      grid-template-areas: 
-          'service-one'
-          'service-two'
-          'service-three'
-          'service-four'
-          'service-five'
-          'service-six'
-          'service-seven'
-      ;
-
-    grid-template-columns: 1fr
-
-  }
+.gas-turbines-img{
+  background: url(assets/images/elect-eng-images/gas-turbines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
-@media(max-width: 800px){
-  .civ-eng-services-imgs{
-      grid-template-areas: 
-          'service-one service-two'
-          'service-three service-four'
-          'service-five service-six'
-          'service-seven service-eight'
-      ;
-
-    grid-template-columns: 1fr 1fr;
-    gap: 16px 8px;
-  }
-  .secure-safety-services-imgs{
-    grid-template-areas: 
-        'service-one service-two'
-        'service-three service-four'
-        'service-five service-six'
-    ;
-
-  grid-template-columns: 1fr 1fr;
-  gap: 16px 8px;
+.generators-img{
+  background: url(assets/images/elect-eng-images/generators.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
+.windmill-generators-img{
+  background: url(assets/images/elect-eng-images/windmill-installation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.solar-energy-img{
+  background: url(assets/images/elect-eng-images/solar-energy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  /* color: #2B196F4D;
+  color: #681D2E4D; */
+}
+
+.sub-stations-img{
+  background: url(assets/images/elect-eng-images/sub-stations.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  /* color: #2B196F4D;
+  color: #681D2E4D; */
+}
+
+.high-transmission-img{
+  background: url(assets/images/elect-eng-images/high-transmission.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  /* color: #2B196F4D;
+  color: #681D2E4D; */
+}
+
+.earthing-img{
+  background: url(assets/images/elect-eng-images/earthing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  /* color: #2B196F4D;
+  color: #681D2E4D; */
+}
+
+.control-switch-room-img{
+  background: url(assets/images/elect-eng-images/control-switch-room.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.voltage-current-transformers-img{
+  background: url(assets/images/elect-eng-images/voltage-current-transformers.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.thunder-arrestors-img{
+  background: url(assets/images/elect-eng-images/thunder-arrestors.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.traffic-control-lightening-img{
+  background: url(assets/images/elect-eng-images/traffic-control-lightening.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+/*ENVIRONMENTAL ENGINEERING SERVICES */
+.fumigation-img{
+  background: url(assets/images/env-eng-images/fumigation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.waste-management-img{
+  background: url(assets/images/env-eng-images/waste-management.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.erotion-control-img{
+  background: url(assets/images/env-eng-images/erosion-control.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+/*MECHANICAL ENGINEERING IMAGES*/
+
+.borehole-drilling-img{
+  background: url(assets/images/mech-eng-images/borehole-drilling.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.dreding-services-img{
+  background: url(assets/images/mech-eng-images/dreding-services.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.hydro-powerplant-img{
+  background: url(assets/images/mech-eng-images/hydro-powerplant.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.sewage-system-plant-img{
+  background: url(assets/images/mech-eng-images/sewage-system-plant.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.osmosis-plant-img{
+  background: url(assets/images/mech-eng-images/osmosis-plant.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.water-treatment-plant-img{
+  background: url(assets/images/mech-eng-images/water-treatment-plant.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.piling-img{
+  background: url(assets/images/mech-eng-images/piling.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.braithwaith-tanks-img{
+  background: url(assets/images/mech-eng-images/braithwaith-tanks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.waterways-cleaning-img{
+  background: url(assets/images/mech-eng-images/waterways-cleaning.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.underground-tanks-img{
+  background: url(assets/images/mech-eng-images/underground-tanks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.auto-hydrant-img{
+  background: url(assets/images/mech-eng-images/auto-hydrant-systems.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.oil-water-pipe-network-img{
+  background: url(assets/images/mech-eng-images/oil-water-pipe-network.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .civil-eng-link{
