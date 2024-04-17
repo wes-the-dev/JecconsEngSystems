@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import AboutUs from './pages/AboutUs'
 import ServicesMain from './pages/Services/ServicesMain'
@@ -16,7 +16,7 @@ import Footer from "./components/Global/Footer";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <NavMenu />
       <Routes>
         <Route path='/' element ={<Homepage />} />
@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/mech-eng-services' element ={<MechEng />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
     
   </React.StrictMode>,
 )
