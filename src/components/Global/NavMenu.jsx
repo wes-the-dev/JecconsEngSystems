@@ -8,7 +8,7 @@ function NavMenu({handleMobileMenu}) {
   const isServices = location?.pathname === '/services';
 
   return (
-    <nav data-visible={handleMobileMenu} className="mainMenu  max-[850px]:flex-col max-[850px]:py-[40px] absolute h-[100px] w-[100%] max-[850px]:w-[100%] max-[850px]:bg-[#29166fb9] max-[850px]:h-fit z-30">
+    <nav data-visible={handleMobileMenu} className="mainMenu  max-[850px]:flex-col max-[850px]:py-[40px] absolute h-[100px] w-[100%] max-[850px]:w-[100%] max-[850px]:bg-[#29166fb9] max-[850px]:h-[100vh] z-30">
 
       <div className="companyLogo max-[850px]:hidden">
         <svg width="145" height="46" viewBox="0 0 145 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,10 +91,10 @@ function NavMenu({handleMobileMenu}) {
           <span>Portfolio</span>
           <div className="menuHovLine"></div>
         </div>
-        <div className="menuListItem">
+        {/* <div className="menuListItem">
           <span>Blog</span>
           <div className="menuHovLine"></div>
-        </div>
+        </div> */}
       </div>
       <div className="contactBtn max-[850px]">
           <span>Contact Us</span>
