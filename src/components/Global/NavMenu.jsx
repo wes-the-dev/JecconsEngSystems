@@ -88,8 +88,10 @@ function NavMenu({handleMobileMenu}) {
           </Link>
         </div>
         <div className="menuListItem">
-          <span>Portfolio</span>
-          <div className="menuHovLine"></div>
+          <Link to="/our-portfolio" className={`menuListItem ${isHome || isServices ? 'text-white' : 'text-black'}`}>
+            <span>Portfolio</span>
+            <div className="menuHovLine"></div>
+          </Link>
         </div>
         {/* <div className="menuListItem">
           <span>Blog</span>
