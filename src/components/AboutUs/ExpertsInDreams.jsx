@@ -16,7 +16,7 @@ const ExpertsInDreams = () => {
                     <path d="M15 17C15 17 20 13.3176 20 12C20 10.6824 15 7 15 7" stroke="#661A2B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
 
-        </div>
+            </div>
         </div>
         <div className="experts-in-dreams-img flex max-[1000px]:hidden justify-end w-[50%]">
             <img src={expertsImg} alt="" />

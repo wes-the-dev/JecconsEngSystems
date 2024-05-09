@@ -1,10 +1,16 @@
 // import NavMenu from "../Global/NavMenu"
-function Hero() {
-  return (
-    <section className="heroSection max-[650px]:overflow-hidden">
-        {/* <NavMenu /> */}
 
-        <div className="heroMain max-[1060px]:w-[100%] max-[850px]:mt-[-35px] max-[850px]:pb-[45px]">
+
+function Hero() {
+
+
+
+  return (
+    <section className="heroSection max-[650px]:overflow-hidden pt-10">
+        {/* <NavMenu /> */}
+        
+        <div className="heroMain max-[1060px]:w-[100%] max-[850px]:pt-[20px] max-[850px]:pb-[45px]">
+
           <div className="jecconsPhrase max-[1060px]:mx-[50px] max-[770px]:mx-5">
             <span className=" text-white max-[430px]:text-[30px]">
             Engineering the Future with Excellence and British Standards.
@@ -19,10 +25,10 @@ function Hero() {
             </div>
             
           </div>
-          <div className="heroJeccons  max-[850px]:text-[100px] max-[1060px]:left-2">
+          {/* <div className="heroJeccons  max-[850px]:text-[100px] max-[1060px]:left-2">
             <span>JECCONS</span>
             
-          </div>
+          </div> */}
           
           
         </div>

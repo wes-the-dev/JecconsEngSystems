@@ -157,8 +157,6 @@
 
 
 
-
-
 /* NAVIGATION BAR */
 
 
@@ -168,6 +166,7 @@
 
 .mainMenu{
   display: flex;
+  transform: translateX(-100%);
   justify-content: space-around;
   /* justify-items: flex-start; */
   align-items: center;
@@ -179,7 +178,13 @@
   /* padding-top: 12px; */
   /* position: sticky;
   top: 0; */
+
 }
+
+.mainMenu[data-visible="true"]{
+  transform: translateX(0%);
+  transition: transform 500ms ease-out;
+ }
 
 .menuList{
   display: flex;
@@ -907,4 +912,29 @@
   grid-area: service-seven;
   box-shadow: 2px 3px 25px 0px rgba(0, 0, 20, 0.27);
 
+}
+.load-more-porfolio-btn{
+  padding-block: 18.5px;
+  padding-inline: 32px;
+  border-radius: 100px;
+  width: fit-content;
+  color: var(--primary-red);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--light-grey);
+  outline: solid var(--light-grey) 1px;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+
+
+.load-more-porfolio-btn:hover{
+  outline-offset: 0px;
+  transform: scale(1.05);
+  transition: 120ms linear;
+
+}
+
+.talk-more-link{
+  background-image: url(assets/images/experts-in-dreams-bg.png);
 }
