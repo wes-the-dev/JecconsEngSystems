@@ -11,6 +11,7 @@ import ElectEng from './pages/Services/ElectEng'
 import EnvEng from './pages/Services/EnvEng'
 import MechEng from './pages/Services/MechEng'
 import Portfolio from './pages/Portfolio'
+import ContactUs from './pages/ContactUs'
 import NavMenu from "./components/Global/NavMenu";
 import Footer from "./components/Global/Footer";
 
@@ -36,6 +37,7 @@ function App() {
             <Route path='/env-eng-services' element ={<EnvEng />} />
             <Route path='/mech-eng-services' element ={<MechEng />} />
             <Route path='/our-portfolio' element ={<Portfolio />} />
+            <Route path='/contact-us' element ={<ContactUs />} />
         </Routes>
         <Footer />
     </Router>

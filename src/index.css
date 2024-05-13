@@ -142,10 +142,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+}
+body{
   font-family: 'PP-Telegraf';
 
 }
-
 
 :root{
   /* --primary-blue: #29166f7f; */
@@ -214,12 +216,12 @@
   height: 3px;
   width: 0;
   /* display: none; */
-  background-color: var(--primary-red);
+  background-color: var(--primary-blue);
 }
 
 .menuList span:hover{
   font-weight: 700;
-  color: var(--primary-red);
+  color: var(--primary-blue);
   cursor: pointer;
 }
 
@@ -232,7 +234,7 @@
   padding-inline: 32px;
   border-radius: 100px;
   width: fit-content;
-  color: var(--primary-red);
+  color: var(--primary-blue);
   font-weight: 700;
   font-size: 18px;
   background-color: var(--light-grey);
@@ -268,7 +270,7 @@
 
 .heroMain{
   /* margin-top: 100px; */
-  padding-bottom: 100px;
+  /* padding-bottom: 270px; */
   position: relative;
   padding-top: 155px;
   width: 60%;
@@ -285,11 +287,11 @@
   color: transparent;
   font-style: normal;
   position: absolute;
-  top: 0;
+  top: 150px;
   left: 45px;
   height: fit-content;
   font-size: 120px;
-  -webkit-text-strokeWidth: 1px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   opacity: 0.3;
 }
@@ -937,4 +939,17 @@
 
 .talk-more-link{
   background-image: url(assets/images/experts-in-dreams-bg.png);
+}
+
+.contact-us-main{
+  background-color: #0000004D;
+  background-image: url('assets/images/contact-us-bg.png');
+  background-blend-mode: multiply;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form-main{
+  box-shadow: 1px 3px 20px 0px rgba(0,0,0,0.8);
 }
