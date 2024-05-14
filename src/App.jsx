@@ -2,6 +2,7 @@ import './index.css'
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import AboutUs from './pages/AboutUs'
 import ServicesMain from './pages/Services/ServicesMain'
@@ -17,13 +18,17 @@ import Footer from "./components/Global/Footer";
 
 function App() {
   
+  
+
   const [isOpen, setOpen] = useState(false);
   const handleMobileMenu = () => setOpen(isOpen => !isOpen)
 
+
   return (
+    
     <Router>
 
-        <div className='min-[851px]:hidden absolute mt-4 h-[150px] z-40 ml-[50px] max-[770px]:ml-5'>
+        <div className={`min-[851px]:hidden absolute mt-4 h-[150px] z-40 ml-[50px] max-[770px]:ml-5 text-gray-400 `}>
           <Hamburger onClick = {() => handleMobileMenu()} toggled={isOpen} toggle={setOpen} />
         </div>
         <NavMenu handleMobileMenu={isOpen}  />
