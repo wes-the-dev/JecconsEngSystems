@@ -16,10 +16,12 @@ function Hero() {
             Engineering the Future with Excellence and British Standards.
             </span>
             <div className="expPhrase max-[430px]:text-[16px]">
-              <p className="">JECCONS Engineering Systems Ltd is a with over 35 years of experience in various engineering fields. Their team, trained in Britain, adheres to British standards.</p>
+              <p className="">JECCONS Engineering Systems Ltd is an indigenous firm with practicing records that span over a period of more than 38 years, specializing in Civil, Mechanical, Electrical and Environmental, Engineering services. We have the required professional competence to deliver engineering services  to international standards. Having been certified and registered with BPP, DPR, NIPEX as qualified Oil and Gas Engineering service providers in over 85 service codes for International Oil Companies (IOCs).</p>
+
+              {/* specializing in Civil, Mechanical, Electrical and Environmental, Engineering services. With a crop of British-trained Engineers in our employ as foundation staff, our work standard and ethics naturally conforms to British standards in all ramifications. */}
 
               <p>
-                We have the required professional competence to deliver engineering services  to international standards. Having been certified and registered with BPP, DPR, NIPEX as qualified Oil and Gas Engineering service providers in over 85 service codes for International Oil Companies (IOCs).
+                
               </p>
 
               <Link to="/about-us">

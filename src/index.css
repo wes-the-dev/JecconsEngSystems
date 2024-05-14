@@ -212,10 +212,8 @@ body{
 }
 
 .menuHovLine{
-  margin-top: 8px;
+  margin-top: 0px;
   height: 3px;
-  width: 0;
-  /* display: none; */
   background-color: var(--primary-blue);
 }
 
@@ -229,6 +227,18 @@ body{
   width: 100%;
   transition: 200ms linear;
 }
+
+@media only screen and (max-width: 850px){
+  .menuList span:hover{
+    color: white;
+  }
+
+  .menuHovLine{
+    background-color: white;
+  }
+}
+
+
 .contactBtn{
   padding-block: 18.5px;
   padding-inline: 32px;
