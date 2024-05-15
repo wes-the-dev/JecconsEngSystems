@@ -10,6 +10,12 @@ function NavMenu({handleMobileMenu}) {
   const isPortfolio = location?.pathname === '/our-portfolio';
   const isContact = location?.pathname === '/contact-us';
 
+  function refreshPage() {
+    setTimeout(()=>{
+        window.location.reload(false);
+    }, 80);
+  }
+
   return (
     <nav data-visible={handleMobileMenu} className={`mainMenu max-[850px]:-translate-x-[100%]  max-[850px]:flex-col max-[850px]:py-[40px] absolute h-[100px] w-[100%] max-[850px]:w-[100%] max-[850px]:bg-[#29166ff2] max-[850px]:h-[100vh] z-30 ${isContact || isServices  ? 'bg-white' : 'bg-transparent'}`}>
 
@@ -71,26 +77,26 @@ function NavMenu({handleMobileMenu}) {
 
       </div>
       <div className="menuList max-[850px]:flex-col ">
-          <Link to="/" className={`menuListItem ${isHome  ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'} `}>
+          <Link to="/" onClick={refreshPage} className={`menuListItem ${isHome  ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'} `}>
                 <span>Home</span>
                 <div className = {`menuHovLine ${isHome ? 'w-[100%]' : 'w-0'} `}></div>
           </Link>
 
         <div className="menuListItem">
-          <Link to="/about-us" className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)] ' && isAbout ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'}`}>
+          <Link to="/about-us" onClick={refreshPage} className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)] ' && isAbout ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'}`}>
             <span>About</span>
             <div className = {`menuHovLine ${isAbout ? 'w-[100%]' : 'w-0'} `}></div>
           </Link>
         </div>
         {/*    Continue this way chief */}
-          <Link to="/services" className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)]' && isServices ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'} `}>
+          <Link to="/services" onClick={refreshPage} className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)]' && isServices ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'} `}>
             <span>Services</span>
             {/* <div className="menuHovLine"></div> */}
             <div className = {`menuHovLine ${isServices ? 'w-[100%]' : 'w-0'} `} ></div>
           </Link>
       
 
-          <Link to="/our-portfolio" className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)]' && isPortfolio ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'}`}>
+          <Link to="/our-portfolio" onClick={refreshPage} className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)]' && isPortfolio ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'}`}>
             <span>Portfolio</span>
             <div className = {`menuHovLine ${isPortfolio ? 'w-[100%]' : 'w-0'} `}></div>
           </Link>
@@ -100,7 +106,7 @@ function NavMenu({handleMobileMenu}) {
           <div className={`menuHovLine ${isBlog ? 'w-[100%]' : 'w-0'} `}></div>
         </div> */}
       </div>
-      <Link to="/contact-us">
+      <Link to="/contact-us" onClick={refreshPage}>
         <div className="contactBtn max-[850px]">
             <span>Contact Us</span>
         </div>

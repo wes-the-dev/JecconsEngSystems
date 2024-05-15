@@ -3,7 +3,11 @@ import { Link } from "react-router-dom"
 
 function Hero() {
 
-
+  function refreshPage() {
+    setTimeout(()=>{
+        window.location.reload(false);
+    }, 80);
+  }
 
   return (
     <section className="heroSection max-[650px]:overflow-hidden pt-10">
@@ -24,7 +28,7 @@ function Hero() {
                 
               </p>
 
-              <Link to="/about-us">
+              <Link to="/about-us" onClick={refreshPage} className="w-fit">
                 <div className="learnMoreBtn max-[850px]:px-[16px] max-[850px]:py-[4px] max-[850px]:text-[18px]">
                   <span>Learn more</span>
                 </div>

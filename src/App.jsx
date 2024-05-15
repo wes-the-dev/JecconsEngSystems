@@ -28,21 +28,21 @@ function App() {
     
     <Router>
 
-        <div className={`min-[851px]:hidden absolute mt-4 h-[150px] z-40 ml-[50px] max-[770px]:ml-5 text-gray-400 `}>
+        <div className={`min-[851px]:hidden absolute mt-4 h-[150px] z-40 ml-[50px] max-[770px]:ml-5 text-gray-500 `}>
           <Hamburger onClick = {() => handleMobileMenu()} toggled={isOpen} toggle={setOpen} />
         </div>
         <NavMenu handleMobileMenu={isOpen}  />
         <Routes>
             <Route path='/' element ={<Homepage />} />
-            <Route path='/about-us' element ={<AboutUs />} />
-            <Route path='/services' element ={<ServicesMain />} />
-            <Route path='/civil-eng-services' element ={<CivEng />} />
-            <Route path='/secure-safe-services' element ={<SecureSafe />} />
-            <Route path='/elect-eng-services' element ={<ElectEng />} />
-            <Route path='/env-eng-services' element ={<EnvEng />} />
-            <Route path='/mech-eng-services' element ={<MechEng />} />
-            <Route path='/our-portfolio' element ={<Portfolio />} />
-            <Route path='/contact-us' element ={<ContactUs />} />
+            <Route path='about-us' element ={<AboutUs />} />
+            <Route path='services' element ={<ServicesMain />} />
+            <Route path='civil-eng-services' element ={<CivEng />} />
+            <Route path='secure-safe-services' element ={<SecureSafe />} />
+            <Route path='elect-eng-services' element ={<ElectEng />} />
+            <Route path='env-eng-services' element ={<EnvEng />} />
+            <Route path='mech-eng-services' element ={<MechEng />} />
+            <Route path='our-portfolio' element ={<Portfolio />} />
+            <Route path='contact-us' element ={<ContactUs />} />
         </Routes>
         <Footer />
     </Router>
