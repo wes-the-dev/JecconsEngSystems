@@ -240,12 +240,11 @@ body{
 
 
 .contactBtn{
-  padding-block: 18.5px;
-  padding-inline: 32px;
+  padding-block: 12px;
+  padding-inline: 24px;
   border-radius: 100px;
   width: fit-content;
   color: var(--primary-blue);
-  font-weight: 700;
   font-size: 18px;
   background-color: var(--light-grey);
   outline: solid var(--light-grey) 1px;
@@ -257,7 +256,7 @@ body{
 .contactBtn:hover{
   outline-offset: 0px;
   transform: scale(1.05);
-  transition: 120ms linear;
+  transition: 100ms linear;
 
 }
 
@@ -333,9 +332,10 @@ body{
 }
 
 .learnMoreBtn{
+  display: block;
   color: #fff;
   font-weight: 700;
-  width: fit-content;
+  width: max-content;
   padding-inline: 32px;
   padding-block: 10px;
   background-color: var(--primary-blue);

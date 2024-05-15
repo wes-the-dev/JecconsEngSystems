@@ -90,7 +90,11 @@ function NavMenu({handleMobileMenu}) {
         </div>
         {/*    Continue this way chief */}
           <Link to="/services" onClick={refreshPage} className={`menuListItem ${isHome ? 'text-white' : 'text-[var(--primary-blue)]' && isServices ? 'text-[var(--primary-blue)] font-bold max-[850px]:text-white' : 'text-[var(--primary-blue)] max-[850px]:text-white'} `}>
-            <span>Services</span>
+            <span className='flex gap-1 items-center'><span>Services</span> 
+                  <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 1.50003C9 1.50003 6.05407 5.5 5 5.5C3.94587 5.5 1 1.5 1 1.5" stroke={`${isHome ? '#fff' : '#29166F'}`} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </span>
             {/* <div className="menuHovLine"></div> */}
             <div className = {`menuHovLine ${isServices ? 'w-[100%]' : 'w-0'} `} ></div>
           </Link>
