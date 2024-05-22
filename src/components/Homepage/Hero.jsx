@@ -13,14 +13,22 @@ function Hero() {
   const myRef = useRef(null);
   const heroText = useRef(null)
   const heroBtn = useRef(null)
+
   const callbackFunc =(entries)=>{
       const [entry] = entries;
       if(entry.isIntersecting){
         // console.log('intersecting')
         myRef.current.classList.add('display-hero-header')
         heroText.current.classList.add('display-hero-text')
-        heroBtn.current.classList.add('display-hero-button')
       }
+  }
+
+  const callbackLearnMoreBtn = (entries)=>{
+    const [entry] = entries;
+    if(entry.isIntersecting){
+      // console.log('intersecting')
+      heroBtn.current.classList.add('display-hero-button')
+    }
   }
   
 
@@ -28,10 +36,14 @@ function Hero() {
     const options = {
       treshold: 0.3 
     }
+    const optionsLearnMoreBtn = {
+      rootMargin: '-50px' 
+    }
     const observeHero = new IntersectionObserver(callbackFunc, options)
+    const observeLearnMoreBtn = new IntersectionObserver(callbackLearnMoreBtn, optionsLearnMoreBtn)
     observeHero.observe(myRef.current)
     observeHero.observe(heroText.current)
-    observeHero.observe(heroBtn.current)
+    observeLearnMoreBtn.observe(heroBtn.current)
     }, [myRef, heroText, heroBtn]);
 
   return (
