@@ -1,6 +1,6 @@
 // import NavMenu from "../Global/NavMenu"
 import { Link } from "react-router-dom"
-import { useState, useRef, useEffect } from "react";
+import {useRef, useEffect } from "react";
 
 function Hero() {
   function refreshPage() {
@@ -10,7 +10,6 @@ function Hero() {
   }
 
 
-  const [isIntersecting, setIsIntersecting] = useState(false);
   const myRef = useRef(null);
   const heroText = useRef(null)
   const heroBtn = useRef(null)
@@ -27,7 +26,7 @@ function Hero() {
 
   useEffect (() =>{
     const options = {
-      treshold: 0.2 
+      treshold: 0.3 
     }
     const observeHero = new IntersectionObserver(callbackFunc, options)
     observeHero.observe(myRef.current)

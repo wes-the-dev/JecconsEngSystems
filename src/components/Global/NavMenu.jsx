@@ -1,6 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
+import {useRef, useEffect} from 'react'
 
 function NavMenu({handleMobileMenu}) {
+
+  const navRef = useRef(null);
+  const callback =(entries)=>{
+    const[entry] = entries
+    if(entry.isIntersecting)navRef.current.classList.add('display-nav')
+  }
+  useEffect(()=>{
+    const options = {}
+    const navObserver = new IntersectionObserver(callback, options)
+    navObserver.observe(navRef.current)
+  }, [navRef])
 
   // I jused the browser api to get the current url useLocation allows you to do so NOTE: console.log() and see the values it's an object
   const location = useLocation();
@@ -13,11 +25,11 @@ function NavMenu({handleMobileMenu}) {
   function refreshPage() {
     setTimeout(()=>{
         window.location.reload(false);
-    }, 80);
+    }, 20);
   }
 
   return (
-    <nav data-visible={handleMobileMenu} className={`mainMenu max-[850px]:-translate-x-[100%]  max-[850px]:flex-col max-[850px]:py-[40px] absolute h-[100px] w-[100%] max-[850px]:w-[100%] max-[850px]:bg-[#29166ff2] max-[850px]:h-[100vh] z-30 ${isContact || isServices  ? 'bg-white' : 'bg-transparent'}`}>
+    <nav ref={navRef} data-visible={handleMobileMenu} className={`mainMenu opacity-0 max-[850px]:-translate-x-[100%]  max-[850px]:flex-col max-[850px]:py-[40px] absolute h-[100px] w-[100%] max-[850px]:w-[100%] max-[850px]:bg-[#29166ff2] max-[850px]:h-[100vh] z-30 ${isContact || isServices  ? 'bg-white' : 'bg-transparent'}`}>
 
       <div className="companyLogo max-[850px]:hidden">
         <svg width="145" height="46" viewBox="0 0 145 46" fill="none" xmlns="http://www.w3.org/2000/svg">

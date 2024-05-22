@@ -161,6 +161,10 @@ body{
 
 /* NAVIGATION BAR */
 
+.display-nav{
+  opacity: 1;
+  transition: 300ms linear ;
+}
 
 .companyLogo{
   /* padding-top: 10px; */
@@ -396,6 +400,10 @@ body{
 
 /*COMPANIES WORKED WITH */
 
+.display-logos{
+  opacity: 1;
+  transition: 500ms linear;
+}
 
 .pastWorks{
   display: flex;

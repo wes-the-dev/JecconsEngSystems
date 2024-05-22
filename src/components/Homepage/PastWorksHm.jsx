@@ -6,10 +6,25 @@ import unlilagLogo from '../../assets/images/portfolio logos/unilag_logo.png'
 import npaLogo from '../../assets/images/portfolio logos/Nigerian-Ports-Authority-3.png'
 import snhLogo from '../../assets/images/portfolio logos/SNH-LOGO0.png'
 import nspmLogo from '../../assets/images/portfolio logos/nspm_logo.png'
+import { useEffect, useRef } from 'react'
+
 
 function PastWorksHm() {
+
+  const logosRef = useRef(null)
+  const callback =([entry])=>{
+    if(entry.isIntersecting) logosRef.current.classList.add('display-logos')
+  }
+
+
+  useEffect(()=>{
+    const options ={}
+    const observeLogos = new IntersectionObserver(callback, options)
+    observeLogos.observe(logosRef.current)
+  }, [logosRef])
+
   return (
-    <section className="pastWorks w-[100%] border-b-[1px] border-b-[#B7B7B7]">
+    <section ref={logosRef} className="opacity-0 pastWorks w-[100%] border-b-[1px] border-b-[#B7B7B7]">
           <div>
             <img src={dclmLogo} alt="dclm-logo" />
           </div>
