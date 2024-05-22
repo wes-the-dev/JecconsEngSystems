@@ -18,7 +18,9 @@ function PastWorksHm() {
 
 
   useEffect(()=>{
-    const options ={}
+    const options ={
+      rootMargin: '-80px',
+    }
     const observeLogos = new IntersectionObserver(callback, options)
     observeLogos.observe(logosRef.current)
   }, [logosRef])
