@@ -201,6 +201,7 @@ body{
 
 .menuListItem{
   display: flex;
+  gap: 3px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -228,6 +229,11 @@ body{
   transition: 200ms linear;
 }
 
+.menuList div:hover + .menuHovLine{
+  width: 100%;
+  transition: 200ms linear;
+}
+
 @media only screen and (max-width: 850px){
   .menuList span:hover{
     color: white;
@@ -238,6 +244,18 @@ body{
   }
 }
 
+.serviceMenuLink .serviceMenuLinkSvg{
+  transform: rotate(180deg);
+}
+
+.serviceMenuLink:hover .serviceMenuLinkSvg{
+  transform: rotate(360deg);
+  transition: 200ms linear;
+}
+
+.serviceMenuLink:hover svg{
+  stroke: #29166F;
+}
 
 .contactBtn{
   padding-block: 12px;
@@ -277,6 +295,27 @@ body{
   background-position: 50%;
 }
 
+.display-hero-header{
+  opacity: 1 !important; 
+  transform: translateY(0) !important;
+  transition: 500ms linear;
+  transition-delay: 100ms;
+}
+
+.display-hero-text{
+  opacity: 1 !important; 
+  transform: translateY(0) !important;
+  transition: 500ms linear;
+  transition-delay: 150ms;
+}
+
+.display-hero-button{
+  opacity: 1 !important; 
+  transform: translateY(0) !important;
+  transition: 500ms linear;
+  transition-delay: 180ms;
+}
+
 .heroMain{
   /* margin-top: 100px; */
   /* padding-bottom: 270px; */
@@ -300,7 +339,7 @@ body{
   left: 45px;
   height: fit-content;
   font-size: 120px;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-strokeWidth: 1px;
   -webkit-text-stroke-color: #fff;
   opacity: 0.3;
 }
