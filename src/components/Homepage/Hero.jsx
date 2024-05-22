@@ -37,7 +37,7 @@ function Hero() {
       treshold: 0.3 
     }
     const optionsLearnMoreBtn = {
-      rootMargin: '-50px' 
+      rootMargin: '-30px' 
     }
     const observeHero = new IntersectionObserver(callbackFunc, options)
     const observeLearnMoreBtn = new IntersectionObserver(callbackLearnMoreBtn, optionsLearnMoreBtn)
