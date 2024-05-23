@@ -76,11 +76,11 @@ function Hero() {
             </div>
             
           </div>
-          <div className="heroJeccons  max-[850px]:text-[100px] max-[1060px]:left-2">
+          
+          <div className="heroJeccons z-50 max-[850px]:text-[100px] max-[1060px]:left-2">
             <span>JECCONS</span>
             
           </div>
-          
           
         </div>
       </section>

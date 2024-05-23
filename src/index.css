@@ -419,6 +419,18 @@ body{
 
 /*ABOUT JECCONS HOME PAGE*/
 
+.display-about-home-image{
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1000ms linear;
+}
+
+.display-about-text{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1000ms linear;
+}
+
 .about-hm-learn-more-btn{
   outline: solid var(--primary-red) 1px;
   outline-offset: 4px;
@@ -465,6 +477,7 @@ body{
   50%{
     transform: rotate(255deg);
   }
+  
   100%{
     transform: rotate(180deg);
   }

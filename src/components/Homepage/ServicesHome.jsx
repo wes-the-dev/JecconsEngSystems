@@ -22,47 +22,47 @@ const ServicesHome = () => {
   return (
     <div className='services-home-page pb-5 pt-24 max-[1000px]:pt-10 px-[60px] max-[770px]:px-5 font-[PP-Telegraf]'>
         
-        <Link to="/civil-eng-services">
+        
             <div className="civil-eng-home flex justify-between gap-10 max-[1000px]:mb-10 mb-28">
-
-                <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[50%] max-[1000px]:items-center max-[1000px]:w-[100%] h-fit my-auto">
-                    <div className="service-home-number max-[1000px]:hidden">
-                        <span className='text-[180px] leading-10'>01</span>
-                    </div>
-
-                    <div className="flex flex-col gap-4">
-                        <div className="civ-eng-summ-title flex max-[1000px]:justify-center items-center max-[650px]:justify-start gap-3">
-                            <img className='w-[44px] h-[44px]' src={civEngIcon} alt="civil-engineering-icon" />
-                            <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Civil Engineering</span> 
+                <Link to="/civil-eng-services" className='w-[50%] max-[1000px]:w-[100%]'>
+                    <div className="civ-eng-summ cursor-pointer flex flex-col gap-4 w-[max] max-[1000px]:items-center max-[1000px]:w-[100%] h-fit my-auto">
+                        <div className="service-home-number max-[1000px]:hidden">
+                            <span className='text-[180px] leading-10'>01</span>
                         </div>
-                        <div className="civ-eng-home-img max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center min-[1001px]:hidden justify-end">
-                            <img className='' src={civEngImg} alt="engineers working on site" />
-                        </div>
-                        <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
-                            Our Civil Engineering team at JECCONS, is dedicated to designing and constructing the infrastructure that shapes our world. From bridges to skyscrapers, our projects stand as testaments to innovation and durability.
-                        </span>
-                        <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
-                            <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
-                                <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
-                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
-                                </div>
+                        <div className="flex flex-col gap-4">
+                            <div className="civ-eng-summ-title flex max-[1000px]:justify-center items-center max-[650px]:justify-start gap-3">
+                                <img className='w-[44px] h-[44px]' src={civEngIcon} alt="civil-engineering-icon" />
+                                <span className='text-[32px] max-[1100px]:text-[28px] max-[650px]:text-[22px]'>Civil Engineering</span> 
                             </div>
-                            <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                            
+                            <div className="civ-eng-home-img max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center min-[1001px]:hidden justify-end">
+                                <img className='' src={civEngImg} alt="engineers working on site" />
+                            </div>
+                            <span className='text-[19px] max-[650px]:text-[17px] min-[650px]:text-justify'>
+                                Our Civil Engineering team at JECCONS, is dedicated to designing and constructing the infrastructure that shapes our world. From bridges to skyscrapers, our projects stand as testaments to innovation and durability.
+                            </span>
+                            <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between max-[1000px]:justify-center max-[1000px]:gap-5 ">
+                                <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
+                                    <span className='text-[20px] max-[650px]:text-[20px]'>LEARN MORE</span>
+                                    <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
+                                    </div>
+                                </div>
+                                <svg className='service-hm-learn-svg' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M3.5 12H20.33" stroke="#661A2B" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                
+
+                            </div>
                         </div>
+                        
                     </div>
-                    
-                </div>
+                </Link>
                 <div className="civ-eng-home-img w-[50%] max-[1000px]:hidden flex justify-end">
                     <img className='' src={civEngImg} alt="engineers working on site" />
                 </div>
             </div>
-        </Link>
         
         <Link to = "/elect-eng-services">
             <div className="elect-eng-home flex gap-6 items-center max-[1000px]:items-start justify-between mb-28 max-[1000px]:mb-10">
@@ -129,7 +129,7 @@ const ServicesHome = () => {
                         <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                             <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
                                 <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
-                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                                 </div>
                             </div>
@@ -174,7 +174,7 @@ const ServicesHome = () => {
                         <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                             <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
                                 <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
-                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                                 </div>
                             </div>
@@ -214,7 +214,7 @@ const ServicesHome = () => {
                     <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                         <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
                             <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
-                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                            <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                             </div>
                         </div>
@@ -258,7 +258,7 @@ const ServicesHome = () => {
                         <div className="learn-more-services-home-btn cursor-pointer overflow-x-hidden text-[var(--primary-red)] flex justify-between">
                             <div className="learn-more-service-hm-text overflow-x-hidden relative w-fit">
                                 <span className='text-[20px] max-[650px]:text-[18px]'>LEARN MORE</span>
-                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[50%] h-[2px] w-[100%]">
+                                <div className="learn-more-service-hm-text-slash bg-[var(--primary-red)] absolute top-[45%] h-[2px] w-[100%]">
 
                                 </div>
                             </div>
