@@ -448,6 +448,18 @@ body{
 
 /* SERVICES HOME PAGE */
 
+.display-from-right, .display-from-left{
+  opacity: 1;
+  transform: translateX(0);
+  transition: 800ms linear;
+}
+
+.display-from-horizontal{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 800ms linear;
+}
+
 .civ-eng-home-img img{
   /* aspect-ratio: 16/1; */
 }
