@@ -37,13 +37,13 @@ function WhatWeDo() {
 
   useEffect(()=>{
     const aboutHmOptions = {
-      rootMargin: '-40px'
+      rootMargin: '-20px'
     }
     const aboutObserver = new IntersectionObserver(aboutHmImgCallback, aboutHmOptions);
-    const aboutHeader1Observer = new IntersectionObserver(aboutHeader1Callback);
-    const aboutHeader2Observer = new IntersectionObserver(aboutHeader2Callback);
-    const aboutTextObserver = new IntersectionObserver(aboutTextCallback);
-    const aboutLearnBtnObserver = new IntersectionObserver(aboutLearnBtnCallback);
+    const aboutHeader1Observer = new IntersectionObserver(aboutHeader1Callback, aboutHmOptions);
+    const aboutHeader2Observer = new IntersectionObserver(aboutHeader2Callback, aboutHmOptions);
+    const aboutTextObserver = new IntersectionObserver(aboutTextCallback, aboutHmOptions);
+    const aboutLearnBtnObserver = new IntersectionObserver(aboutLearnBtnCallback, aboutHmOptions);
 
     aboutObserver.observe(aboutJeccImgRef.current);
     aboutHeader1Observer.observe(aboutJeccHeader1.current);
@@ -55,17 +55,17 @@ function WhatWeDo() {
 
   return (
     <section className="aboutJecconsHm py-6 px-12 max-[770px]:px-5 flex gap-6 border-b-[#B7B7B7] border-[1px] max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:gap-5">
-      <div ref={aboutJeccImgRef} className="aboutJeccImg opacity-0 -translate-x-[30%] w-[50%] max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center">
+      <div ref={aboutJeccImgRef} className="aboutJeccImg opacity-0 -translate-x-[20%] w-[50%] max-[1000px]:w-[100%] max-[1000px]:flex max-[1000px]:justify-center">
         <img src={aboutJecconsImg} alt="engineers examining a drawing" />
 
       </div>
-      <div className="about-jeccons-details-home w-[50%] font-[PP-Telegraf] flex flex-col gap-8 justify-center max-[1000px]:w-[100%] max-[1000px]:gap-2 max-[1000px]:items-center">
-        <h3 ref={aboutJeccHeader1} className='opacity-0 -translate-y-[30%] font-bold text-[var(--primary-red)]'>About Jeccons</h3>
-        <h2 ref={aboutJeccHeader2} className='opacity-0 -translate-y-[30%] text-[36px] max-[770px]:text-center font-bold'>Engineering Excellence, Building Futures</h2>
-        <span ref={aboutJeccTextRef} className='opacity-0 -translate-y-[30%] max-[770px]:text-justify'>
+      <div className="about-jeccons-details-home w-[50%] font-[PP-Telegraf] flex flex-col gap-1 justify-center max-[1000px]:w-[100%] max-[1000px]:gap-2 max-[1000px]:items-center">
+        <h3 ref={aboutJeccHeader1} className='opacity-0 translate-y-[25%] font-bold text-[var(--primary-red)]'>About Jeccons</h3>
+        <h2 ref={aboutJeccHeader2} className='opacity-0 translate-y-[25%] text-[36px] max-[770px]:text-center font-bold'>Engineering Excellence, Building Futures</h2>
+        <span ref={aboutJeccTextRef} className='opacity-0 translate-y-[25%] max-[770px]:text-justify mb-8'>
         JECCONS ENGINEERING SYSTEM is an engineering and construction firm specializing in safety, water, energy, maintenance and construction. We provide services to several relevant sectors of Nigerian economy such as water, energy, security manufacturing, oil and gas with our cache of international professionals and experts. JECCONS ENGINEERING name has been synonymous with excellence and quality in all its relevant industries.
         </span>
-        <Link ref={aboutJeccLearnMoreBtn} className='opacity-0 -translate-y-[30%] w-max' to="/about-us">
+        <Link ref={aboutJeccLearnMoreBtn} className='opacity-0 translate-y-[25%] w-max' to="/about-us">
           <div className=" about-hm-learn-more-btn flex items-center gap-[10px] border-transparent py-[18.5px] px-8 bg-[#E5E5E5] w-max text-[var(--primary-red)] font-bold rounded-[100px]  text-[18px] max-[1032px]:px-6 max-[1032px]:py-[16px] max-[1032px]:text-[14px] max-[1000px]:mt-[15px]">
             <span>Learn More</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

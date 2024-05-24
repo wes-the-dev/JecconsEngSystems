@@ -302,21 +302,21 @@ body{
 .display-hero-header{
   opacity: 1 !important; 
   transform: translateY(0) !important;
-  transition: 800ms linear;
+  transition: 600ms linear;
   transition-delay: 100ms;
 }
 
 .display-hero-text{
   opacity: 1 !important; 
   transform: translateY(0) !important;
-  transition: 800ms linear;
+  transition: 600ms linear;
   transition-delay: 150ms;
 }
 
 .display-hero-button{
   opacity: 1 !important; 
   transform: translateY(0) !important;
-  transition: 800ms linear;
+  transition: 600ms linear;
   transition-delay: 200ms;
 }
 
@@ -402,7 +402,7 @@ body{
 
 .display-logos{
   opacity: 1;
-  transition: 800ms linear;
+  transition: 600ms linear;
 }
 
 .pastWorks{
@@ -422,13 +422,13 @@ body{
 .display-about-home-image{
   opacity: 1;
   transform: translateX(0);
-  transition: 800ms linear;
+  transition: 600ms linear;
 }
 
 .display-about-text{
   opacity: 1;
   transform: translateY(0);
-  transition: 1000ms linear;
+  transition: 600ms linear;
 }
 
 .about-hm-learn-more-btn{
@@ -451,13 +451,13 @@ body{
 .display-from-right, .display-from-left{
   opacity: 1;
   transform: translateX(0);
-  transition: 800ms linear;
+  transition: 600ms linear;
 }
 
 .display-from-horizontal{
   opacity: 1;
   transform: translateY(0);
-  transition: 800ms linear;
+  transition: 600ms linear;
 }
 
 .civ-eng-home-img img{
